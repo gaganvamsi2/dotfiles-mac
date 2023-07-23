@@ -12,9 +12,7 @@
 --   command = "normal zR",
 -- })
 
-local function augroup(name)
-  return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
-end
-
-augroup("open_folds")
 vim.api.nvim_command("autocmd BufWinEnter * normal! zR")
+vim.api.nvim_command("autocmd BufReadPost * normal! zR")
+
+vim.api.nvim_command('autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"')
