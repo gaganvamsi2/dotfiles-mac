@@ -218,6 +218,8 @@ alias d="v -d"
 alias lf=lfcd
 alias iopacity="~/.config/alacritty/change-opacity.sh +"
 alias dopacity="~/.config/alacritty/change-opacity.sh -"
+alias ls=lsd
+alias l="lsd -al"
 
 ## vi mode settings 
 VI_MODE_SET_CURSOR=true
