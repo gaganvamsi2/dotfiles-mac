@@ -1,9 +1,5 @@
 return {
   {
-    "iamcco/markdown-preview.nvim",
-    cmd = "MarkdownPreview",
-  },
-  {
     "norcalli/nvim-colorizer.lua",
   },
   {
