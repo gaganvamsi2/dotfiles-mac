@@ -1101,3 +1101,6 @@ script/setup
 : 1690213796:0;source ~/.config/zsh/.zshrc
 : 1690213818:0;chezmoi diff
 : 1690213855:0;cm re-add
+: 1690214642:0;cm diff
+: 1690214665:0;lazygit
+: 1690214698:0;cm re-add

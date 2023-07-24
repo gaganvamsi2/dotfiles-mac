@@ -15,16 +15,9 @@ if ! zgenom saved; then
     zgenom ohmyzsh
 
     # plugins
-    zgenom ohmyzsh plugins/git
     zgenom ohmyzsh plugins/sudo
     # just load the completions
     zgenom ohmyzsh --completion plugins/docker-compose
-
-    # Install ohmyzsh osx plugin if on macOS
-    [[ "$(uname -s)" = Darwin ]] && zgenom ohmyzsh plugins/macos
-
-    # theme
-    zgenom ohmyzsh themes/arrow
 
     # Enable fzf (fuzzy finder) for tab completions and history searching
     zgenom load Aloxaf/fzf-tab
