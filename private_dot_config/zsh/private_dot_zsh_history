@@ -1099,3 +1099,10 @@ chezmoi apply
 lazygit
 exit
 chezmoi re-add
+c
+chezmoi diff
+chezmoi cd
+v
+z zsh
+v
+chezmoi re-add
