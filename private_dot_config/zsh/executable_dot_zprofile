@@ -1,17 +1,12 @@
 #!/usr/bin/env zsh
 
+export ZSH="$ZDOTDIR/ohmyzsh"
+
 # Set XDG Base Directory paths
 export XDG_CONFIG_HOME="${HOME}/.config"          # User configuration files
 export XDG_CACHE_HOME="${HOME}/.cache"            # User cache files
 export XDG_DATA_HOME="${HOME}/.local/share"       # User data files
 export XDG_STATE_HOME="${HOME}/.local/state"      # User state files
-
-# Set other tool and configuration paths to clean up ~
-export CARGO_HOME="$XDG_DATA_HOME"/cargo          # Rust's Cargo package manager
-export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv       # NVIDIA CUDA cache
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg           # GNU Privacy Guard home
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java # Java preferences
-export ANDROID_HOME="$XDG_DATA_HOME"/android     # Android SDK home
 
 # Set zsh shell history file path and set max history length
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
@@ -22,12 +17,67 @@ export ZSH_FZF_HISTORY_SEARCH_DATES_IN_SEARCH=0 # Disable dates in zsh-fzf-histo
 export ZSH_FZF_HISTORY_SEARCH_EVENT_NUMBERS=0 # Disable index in zsh-fzf-history
 export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES=1 # Hide duplicates in zsh-fzf-history
 
-# Add additional directories to PATH
-export PATH=$PATH:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
-
 # Set sudo password prompt
 export SUDO_PROMPT='[] Enter Password: '
 
-# Set default editor
-export EDITOR='nvim'
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
+if [[ -n $SSH_CONNECTION ]]; then
+  export PAGER='less'
+else
+  export PAGER='bat'
+fi
+
+export NVM_DIR="$HOME/.nvm"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+
+# >>> talisman >>>
+# Below environment variables should not be modified unless you know what you are doing
+export TALISMAN_HOME=/Users/azhahes/.talisman/bin
+export TALISMAN_INTERACTIVE=true
+# <<< talisman <<<
+
+export java_home=${sdkman_candidates_dir}/java/current
+
+# --preview "bat -n --color=always {}"
+export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
+
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+
+# CTRL-/ to toggle small preview window to see the full command
+# CTRL-Y to copy the command into clipboard using pbcopy
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
+
+export FZF_ALT_C_COMMAND="fd --type d"
+# Print tree structure in the preview window
+export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+
+# Options to fzf command
+export FZF_COMPLETION_OPTS='--border --info=inline'
+
+export GOBIN="$HOME/go/bin"
+
+export PATH=$PATH:"$HOME/.config/lf/bin"
+export PATH=$PATH:"$HOME/.cargo/bin"
+export PATH=$PATH:"/Applications/IntelliJ IDEA.app/Contents/MacOS"
+export PATH=$PATH:$GOBIN
+export PATH=$PATH:/Users/azhahes/Workspace/tools/apache-maven-3.9.2/bin

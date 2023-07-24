@@ -7,8 +7,6 @@ source ${ZDOTDIR}/aliases.zsh # Source zsh aliases
 source ${ZDOTDIR}/keybinds.zsh # Source zsh keybinds
 source ${ZDOTDIR}/functions.zsh # Source custom functions
 source ${ZDOTDIR}/zgenom.zsh # Source zgenom for plugins
-source ${ZDOTDIR}/keybinds-late.zsh # Source late load keybinds
-source ${ZDOTDIR}/env.zsh # Source late load keybinds
 
 eval "$(starship init zsh)"
 # ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)   # SSO cache name will vary example format "ebb09b4a7449e07674b36bd4f19f32099abfaf7b.json"

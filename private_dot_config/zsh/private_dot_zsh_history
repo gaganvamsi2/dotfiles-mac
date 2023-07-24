@@ -1,269 +1,254 @@
-: 1690129992:0;cd plugins
-: 1690129992:0;cd tmux-resurrect
-: 1690129992:0;cd ../..
-: 1690129992:0;cd plugins/tmux-resurrect
-: 1690129992:0;v resurrect.tmux
-: 1690129992:0;tmux source-file ~/.tmux.conf
-: 1690129992:0;~!
-: 1690129992:0;~
-: 1690129992:0;tmux kill-session -a
-: 1690129992:0;z list
-: 1690129992:0;z ls
-: 1690129992:0;cd ~
-: 1690129992:0;z add Workspace
-: 1690129992:0;brew uninstall zoxide
-: 1690129992:0;brew install zoxide
-: 1690129992:0;z lcp-core-bff-org-creation-service
-: 1690129992:0;z <
-: 1690129992:0;z query -ls
-: 1690129992:0;z query -all
-: 1690129992:0;z query 
-: 1690129992:0;z query *
-: 1690129992:0;z query work
-: 1690129992:0;cleear
-: 1690129992:0;echo $resurrect_dir
-: 1690129992:0;echo $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-: 1690129992:0;jq
-: 1690129992:0;brew install jq
-: 1690129992:0;kitty @new-window
-: 1690129992:0;icat sunset-illustration.jpg
-: 1690129992:0;d Mountain\ Retreat\ \[3840x2160\].png sunset-illustration.jpg
-: 1690129992:0;d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml 
-: 1690129992:0;v -d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml
-: 1690129992:0;d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml
-: 1690129992:0;kitty +kitten themes
-: 1690129992:0;z lcp
-: 1690129992:0;echo http://google.com
-: 1690129992:0;ls --hyperlink=auto
-: 1690129992:0;echo http://google.com | pbcopy
-: 1690129992:0;pbcopy
-: 1690129992:0;clippaste
-: 1690129992:0;kitty +kitten panel sh -c 'printf "\n\n\nHello, world."; sleep 5s'
-: 1690129992:0;cd Workspace
-: 1690129992:0;echo $resurrect-dir
-: 1690129992:0;echo $(resurrect-dir)
-: 1690129992:0;echo $($resurrect-dir)
-: 1690129992:0;$resurrect-dir
-: 1690129992:0;cd .tmux/resurrect
-: 1690129992:0;cd save
-: 1690129992:0;cd pane_contents
-: 1690129992:0;v last
-: 1690129992:0;tmux kill
-: 1690129992:0;kitty --debug-input
-: 1690129992:0;kitty
-: 1690129992:0;cd LenovoOTP64
-: 1690129992:0;wine64 LenovoOTP64.exe
-: 1690129992:0;z knowledge
-: 1690129992:0;mkdir lenovo-uds
-: 1690129992:0;git config --global user.email "asubramaniya@lenovo.com"
-: 1690129992:0;git config --global user.email "azhahes96@gmail.com"
-: 1690129992:0;git config --remove-section user
-: 1690129992:0;git config --local user.email "asubramaniya@lenovo.com"
-: 1690129992:0;git config --local user.name "Azhaheswaran Subramaniyan"
-: 1690129992:0;git config --global --remove-section user
-: 1690129992:0;alias gst
-: 1690129992:0;git init\
+z lcp-core-bff-org-creation-service
+z <
+z query -ls
+z query -all
+z query 
+z query *
+z query work
+cleear
+echo $resurrect_dir
+echo $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+jq
+brew install jq
+kitty @new-window
+icat sunset-illustration.jpg
+d Mountain\ Retreat\ \[3840x2160\].png sunset-illustration.jpg
+d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml 
+v -d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml
+d ./src/main/resources/application.yaml ./src/main/resources/application-dev.yaml
+kitty +kitten themes
+z lcp
+echo http://google.com
+ls --hyperlink=auto
+echo http://google.com | pbcopy
+pbcopy
+clippaste
+kitty +kitten panel sh -c 'printf "\n\n\nHello, world."; sleep 5s'
+cd Workspace
+echo $resurrect-dir
+echo $(resurrect-dir)
+echo $($resurrect-dir)
+$resurrect-dir
+cd .tmux/resurrect
+cd save
+cd pane_contents
+v last
+tmux kill
+kitty --debug-input
+kitty
+cd LenovoOTP64
+wine64 LenovoOTP64.exe
+z knowledge
+mkdir lenovo-uds
+git config --global user.email "asubramaniya@lenovo.com"
+git config --global user.email "azhahes96@gmail.com"
+git config --remove-section user
+git config --local user.email "asubramaniya@lenovo.com"
+git config --local user.name "Azhaheswaran Subramaniyan"
+git config --global --remove-section user
+alias gst
+git init\
 git add --all\
 git commit -m "Initial Commit"\
 git remote add origin https://bitbucket.tc.lenovo.com/scm/\~asubramaniya/lenovo-uds.git\
 git push -u origin HEAD:main
-: 1690129992:0;rm pre-commit
-: 1690129992:0;cd ../../
-: 1690129992:0;c ....
-: 1690129992:0;v .gitmodules
-: 1690129992:0;git pull
-: 1690129992:0;git submodule init
-: 1690129992:0;git submodule update
-: 1690129992:0;cd 004\ Spaces/Work/Projects
-: 1690129992:0;git stuat
-: 1690129992:0;git stutus
-: 1690129992:0;gst
-: 1690129992:0;cd ..'\
+rm pre-commit
+cd ../../
+c ....
+v .gitmodules
+git pull
+git submodule init
+git submodule update
+cd 004\ Spaces/Work/Projects
+git stuat
+git stutus
+gst
+cd ..'\
 \
 '
-: 1690129992:0;alias g*
-: 1690129992:0;alias gl
-: 1690129992:0;git show 1fcc687
-: 1690129992:0;git show 0ec4c12 
-: 1690129992:0;cd lenovo-uds
-: 1690129992:0;git log --oneline
-: 1690129992:0;git show c43361c
-: 1690129992:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-recurring-revenue-proxy.git
-: 1690129992:0;docker rm some-postgres
-: 1690129992:0;docker rm tender_antonelli
-: 1690129992:0;docker rm unruffled_heyrovsky
-: 1690129992:0;docker rm vigilant_tesla
-: 1690129992:0;echo test
-: 1690129992:0;brew install gnu-sed
-: 1690129992:0;brew install rg
-: 1690129992:0;rm -rf *.mp4
-: 1690129992:0;rm -rf *.m4a
-: 1690129992:0;rm -rf *.txt
-: 1690129992:0;rm -rf *.vtt
-: 1690129992:0;rm -rf *.vtt *.txt *.mp4 *.m4a
-: 1690129992:0;v hec-kt-slids.md
-: 1690129992:0;mv hec-kt-slids.md hec-kt-slides.md
-: 1690129992:0;brew install lf
-: 1690129992:0;man lf
-: 1690129992:0;rclear
-: 1690129992:0;locate vpncli
-: 1690129992:0;mkdir -p ~/.config/lf\
+alias g*
+alias gl
+git show 1fcc687
+git show 0ec4c12 
+cd lenovo-uds
+git log --oneline
+git show c43361c
+git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-recurring-revenue-proxy.git
+docker rm some-postgres
+docker rm tender_antonelli
+docker rm unruffled_heyrovsky
+docker rm vigilant_tesla
+echo test
+brew install gnu-sed
+brew install rg
+rm -rf *.mp4
+rm -rf *.m4a
+rm -rf *.txt
+rm -rf *.vtt
+rm -rf *.vtt *.txt *.mp4 *.m4a
+v hec-kt-slids.md
+mv hec-kt-slids.md hec-kt-slides.md
+brew install lf
+man lf
+rclear
+locate vpncli
+mkdir -p ~/.config/lf\
 curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfrc.example -o ~/.config/lf/lfrc
-: 1690129992:0;mkdir -p ~/.config/lf\
+mkdir -p ~/.config/lf\
 curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfcd.sh -o ~/.config/lf/lfcd.sh
-: 1690129992:0;echo gopath
-: 1690129992:0;echo $GOPATH\\
+echo gopath
+echo $GOPATH\\
 
-: 1690129992:0;chmod a-x ~/.config/lf/lfcd.sh
-: 1690129992:0;chmod a+r ~/.config/lf/lfcd.sh
-: 1690129992:0;chmod a+rw ~/.config/lf/lfcd.sh
-: 1690129992:0;ld
-: 1690129992:0;alias lf
-: 1690129992:0;source ~/.config/lf/lfcd.sh
-: 1690129992:0;test ~/.config/lf/lfcd.sh
-: 1690129992:0;[ -f ~/.config/lf/lfcd.sh ]
-: 1690129992:0;if [ -f ~/.config/lf/lfcd.sh ] then echo test fi\
+chmod a-x ~/.config/lf/lfcd.sh
+chmod a+r ~/.config/lf/lfcd.sh
+chmod a+rw ~/.config/lf/lfcd.sh
+ld
+alias lf
+source ~/.config/lf/lfcd.sh
+test ~/.config/lf/lfcd.sh
+[ -f ~/.config/lf/lfcd.sh ]
+if [ -f ~/.config/lf/lfcd.sh ] then echo test fi\
 
-: 1690129992:0;rm lfcd.sh
-: 1690129992:0;curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfcd.sh -o ~/.config/lf/lfcd.sh
-: 1690129992:0;source ~/.config/lf/lfrc
-: 1690129992:0;mkdir -p ~/.config/lf\
+rm lfcd.sh
+curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfcd.sh -o ~/.config/lf/lfcd.sh
+source ~/.config/lf/lfrc
+mkdir -p ~/.config/lf\
 curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/colors.example -o ~/.config/lf/colors\
 curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/icons.example -o ~/.config/lf/icons
-: 1690129992:0;.config/lf/lfcd.sh
-: 1690129992:0;chmod +x ./lfcd.sh
-: 1690129992:0;lfcd
-: 1690129992:0;lfcd.sh
-: 1690129992:0;echo $LFCD
-: 1690129992:0;echo $HOME
-: 1690129992:0;source ./lfcd.sh
-: 1690129992:0;nvim -S
-: 1690129992:0;echo $vi
-: 1690129992:0;vi
-: 1690129992:0;echo $EDITOR
-: 1690129992:0;echo $fpath
-: 1690129992:0;brew install go
-: 1690129992:0;echo $gopath
-: 1690129992:0;go install github.com/doronbehar/pistol/cmd/pistol@
-: 1690129992:0;go install github.com/doronbehar/pistol/cmd/pistol
-: 1690129992:0;go install github.com/doronbehar/pistol/cmd/pistol@v0.4.2
-: 1690129992:0;brew install pistol
-: 1690129992:0;brew install brew install libmagic
-: 1690129992:0;brew install libmagic
-: 1690129992:0;pistol
-: 1690129992:0;go install github.com/doronbehar/pistol/cmd/pistol@latest
-: 1690129992:0;pistol 
-: 1690129992:0;go pistol
-: 1690129992:0;cd doronbehar
-: 1690129992:0;cd pistol@v0.4.2
-: 1690129992:0;mvn clean compile
-: 1690129992:0;tar -xzvf pistol-static-x86_64
-: 1690129992:0;tar -xzvf pistol.1.gz
-: 1690129992:0;unzip pistol
-: 1690129992:0;unzip pistol.1.gz
-: 1690129992:0;pistol.1
-: 1690129992:0;rm -rf pistol*
-: 1690129992:0;v ~/.config/lf/lf_kitty_preview\
+.config/lf/lfcd.sh
+chmod +x ./lfcd.sh
+lfcd
+lfcd.sh
+echo $LFCD
+echo $HOME
+source ./lfcd.sh
+nvim -S
+echo $vi
+vi
+echo $EDITOR
+echo $fpath
+brew install go
+echo $gopath
+go install github.com/doronbehar/pistol/cmd/pistol@
+go install github.com/doronbehar/pistol/cmd/pistol
+go install github.com/doronbehar/pistol/cmd/pistol@v0.4.2
+brew install pistol
+brew install brew install libmagic
+brew install libmagic
+pistol
+go install github.com/doronbehar/pistol/cmd/pistol@latest
+pistol 
+go pistol
+cd doronbehar
+cd pistol@v0.4.2
+mvn clean compile
+tar -xzvf pistol-static-x86_64
+tar -xzvf pistol.1.gz
+unzip pistol
+unzip pistol.1.gz
+pistol.1
+rm -rf pistol*
+v ~/.config/lf/lf_kitty_preview\
 
-: 1690129992:0;chmod +x ~/.config/lf/lf_kitty_{clean,preview}
-: 1690129992:0;v ~/.config/lf/lf_kitty_clean
-: 1690129992:0;v ~/.config/lf/lf_kitty_preview
-: 1690129992:0;tmux attach
-: 1690129992:0;v .config/alacritty/alacritty.yml
-: 1690129992:0;v ~/.config/kitty/kitty.conf
-: 1690129992:0;brew update alacritty
-: 1690129992:0;aa
-: 1690129992:0;brew upgrade alacritty
-: 1690129992:0;alacritty
-: 1690129992:0;rm lf_kitty_clean lf_kitty_preview
-: 1690129992:0;kls
-: 1690129992:0;brew search ueber
-: 1690129992:0;brew search ueberzugpp
-: 1690129992:0;mkdir -p ~/.config/ueberzugpp
-: 1690129992:0;curl https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb -o ~/.config/ueberzugpp/install.rb
-: 1690129992:0;brew install --build-from-source ~/.config/ueberzugpp/install.rb
-: 1690129992:0;brew install https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb
-: 1690129992:0;brew install wget
-: 1690129992:0;wget https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb
-: 1690129992:0;z ueb
-: 1690129992:0;rm install.rb
-: 1690129992:0;git clonw https://github.com/jstkdng/ueberzugpp.git
-: 1690129992:0;brew install --HEAD -s homebrew/ueberzugpp.rb
-: 1690129992:0;cd homebrew
-: 1690129992:0;brew install --HEAD -s ueberzugpp.rb
-: 1690129992:0;v ueberzugpp.rb
-: 1690129992:0;rm -rf ueberzugpp
-: 1690129992:0;brew install --HEAD -s https://raw.githubusercontent.com/jstkdng/ueberzugpp/v2.8.7/homebrew/ueberzugpp.rb
-: 1690129992:0;wget https://raw.githubusercontent.com/jstkdng/ueberzugpp/v2.8.7/homebrew/ueberzugpp.rb
-: 1690129992:0;brew install ueberzugpp.rb
-: 1690129992:0;cd .config/ueberzugpp
-: 1690129992:0;mkdir -p repo
-: 1690129992:0;git clone https://github.com/jstkdng/ueberzugpp.git
-: 1690129992:0;cd sc
-: 1690129992:0;cd scripts
-: 1690129992:0;cp-p
-: 1690129992:0;brew install cp-p
-: 1690129992:0;git clone https://github.com/Naheel-Azawy/cp-p.git
-: 1690129992:0;cd cp-p
-: 1690129992:0;sudo make install
-: 1690129992:0;mkdir -p /usr/local/bin\
+chmod +x ~/.config/lf/lf_kitty_{clean,preview}
+v ~/.config/lf/lf_kitty_clean
+v ~/.config/lf/lf_kitty_preview
+tmux attach
+v .config/alacritty/alacritty.yml
+v ~/.config/kitty/kitty.conf
+brew update alacritty
+aa
+brew upgrade alacritty
+alacritty
+rm lf_kitty_clean lf_kitty_preview
+kls
+brew search ueber
+brew search ueberzugpp
+mkdir -p ~/.config/ueberzugpp
+curl https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb -o ~/.config/ueberzugpp/install.rb
+brew install --build-from-source ~/.config/ueberzugpp/install.rb
+brew install https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb
+brew install wget
+wget https://raw.githubusercontent.com/jstkdng/ueberzugpp/master/homebrew/ueberzugpp.rb
+z ueb
+rm install.rb
+git clonw https://github.com/jstkdng/ueberzugpp.git
+brew install --HEAD -s homebrew/ueberzugpp.rb
+cd homebrew
+brew install --HEAD -s ueberzugpp.rb
+v ueberzugpp.rb
+rm -rf ueberzugpp
+brew install --HEAD -s https://raw.githubusercontent.com/jstkdng/ueberzugpp/v2.8.7/homebrew/ueberzugpp.rb
+wget https://raw.githubusercontent.com/jstkdng/ueberzugpp/v2.8.7/homebrew/ueberzugpp.rb
+brew install ueberzugpp.rb
+cd .config/ueberzugpp
+mkdir -p repo
+git clone https://github.com/jstkdng/ueberzugpp.git
+cd sc
+cd scripts
+cp-p
+brew install cp-p
+git clone https://github.com/Naheel-Azawy/cp-p.git
+cd cp-p
+sudo make install
+mkdir -p /usr/local/bin\
 cp -f cp-p /usr/local/bin/\
 cp -f mv-p /usr/local/bin/\
 
-: 1690129992:0;z .config
-: 1690129992:0;cd repo
-: 1690129992:0;cd ueberzugpp
-: 1690129992:0;cp-p cleaner preview ~/.config/lf
-: 1690129992:0;cp-p cleaner ~/.config/lf/
-: 1690129992:0;cp-p cleaner ~/.config/lf/cleaner
-: 1690129992:0;cp cleaner ~/.config/lf
-: 1690129992:0;cp preview ~/.config/lf
-: 1690129992:0;ueberzugpp --version
-: 1690129992:0;cd .config/lf
-: 1690129992:0;source ./lfub
-: 1690129992:0;cd .config/
-: 1690129992:0;cd ueberzugpp/repo/ueberzugpp/scripts/lf
-: 1690129992:0;mv lfub lfub.sh
-: 1690129992:0;bash lfub.sh
-: 1690129992:0;ueberzugpp Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ueberzugpp --help
-: 1690129992:0;ueberzug Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ueberzug --help
-: 1690129992:0;brew install --cask jumpcut
-: 1690129992:0;kill -9 4982 
-: 1690129992:0;brew install maccy
-: 1690129992:0;cd lcp-core-bff-org-creation-service
-: 1690129992:0;fd | fzf
-: 1690129992:0;colear
-: 1690129992:0;mkdir bin
-: 1690129992:0;v lfub.sh
-: 1690129992:0;lfub.sh
-: 1690129992:0;chmod +x lfub.sh
-: 1690129992:0;./lfub.sh
-: 1690129992:0;cd ./.config/lf/
-: 1690129992:0;cd bi
-: 1690129992:0;mv lfub.sh lfub
-: 1690129992:0;v draw_img.sh
-: 1690129992:0;rm cleaner preview
-: 1690129992:0;v lfrc
-: 1690129992:0;v clear_img.sh
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -a add -i PREVIEW  -f Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -i PREVIEW  -f Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -f Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -f "Mountain\ Retreat\ \[3840x2160\].png"
-: 1690129992:0;ffmpecthumnailer
-: 1690129992:0;ffmpegthumbnailer
-: 1690129992:0;brew install ffmpegthumbnailer
-: 1690129992:0;ffmpegthumbnailer Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ffmpegthumbnailer -i Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;ls -l
-: 1690129992:0;chmod +x ~/.config/lf/{clear_img.sh,draw_img.sh,previewer.sh}
-: 1690129992:0;chmod +x lfub
-: 1690129992:0;cd /temp/
-: 1690129992:0;cd /tmp/
-: 1690129992:0;echo $SSH_client
-: 1690129992:0;v lfub
-: 1690129992:0;# image() {\
+z .config
+cd repo
+cd ueberzugpp
+cp-p cleaner preview ~/.config/lf
+cp-p cleaner ~/.config/lf/
+cp-p cleaner ~/.config/lf/cleaner
+cp cleaner ~/.config/lf
+cp preview ~/.config/lf
+ueberzugpp --version
+cd .config/lf
+source ./lfub
+cd .config/
+cd ueberzugpp/repo/ueberzugpp/scripts/lf
+mv lfub lfub.sh
+bash lfub.sh
+ueberzugpp Mountain\ Retreat\ \[3840x2160\].png
+ueberzugpp --help
+ueberzug Mountain\ Retreat\ \[3840x2160\].png
+ueberzug --help
+brew install --cask jumpcut
+kill -9 4982 
+brew install maccy
+cd lcp-core-bff-org-creation-service
+fd | fzf
+colear
+mkdir bin
+v lfub.sh
+lfub.sh
+chmod +x lfub.sh
+./lfub.sh
+cd ./.config/lf/
+cd bi
+mv lfub.sh lfub
+v draw_img.sh
+rm cleaner preview
+v lfrc
+v clear_img.sh
+ueberzugpp cmd -s $UB_SOCKET -a add -i PREVIEW  -f Mountain\ Retreat\ \[3840x2160\].png
+ueberzugpp cmd -s $UB_SOCKET -i PREVIEW  -f Mountain\ Retreat\ \[3840x2160\].png
+ueberzugpp cmd -s $UB_SOCKET -f Mountain\ Retreat\ \[3840x2160\].png
+ueberzugpp cmd -s $UB_SOCKET -f "Mountain\ Retreat\ \[3840x2160\].png"
+ffmpecthumnailer
+ffmpegthumbnailer
+brew install ffmpegthumbnailer
+ffmpegthumbnailer Mountain\ Retreat\ \[3840x2160\].png
+ffmpegthumbnailer -i Mountain\ Retreat\ \[3840x2160\].png
+ls -l
+chmod +x ~/.config/lf/{clear_img.sh,draw_img.sh,previewer.sh}
+chmod +x lfub
+cd /temp/
+cd /tmp/
+echo $SSH_client
+v lfub
+# image() {\
 # 	FILE_PATH="$1"\
 # 	X=$4\
 # 	Y=$5\
@@ -273,7 +258,7 @@ cp -f mv-p /usr/local/bin/\
 # 	exit 1\
 # }\
 
-: 1690129992:0;echo # image() {\
+echo # image() {\
 # 	FILE_PATH="$1"\
 # 	X=$4\
 # 	Y=$5\
@@ -283,214 +268,211 @@ cp -f mv-p /usr/local/bin/\
 # 	exit 1\
 # }\
 
-: 1690129992:0;echo $UB_PID_File
-: 1690129992:0;echo $UB_pid
-: 1690129992:0;echo $UB_PID
-: 1690129992:0;echo $UB_SOCKET
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -a add -i PREVIEW -x 0 -y 0 --max-width 100 --max-height 100 -f "Mountain Retreat [3840x2160].png"\
+echo $UB_PID_File
+echo $UB_pid
+echo $UB_PID
+echo $UB_SOCKET
+ueberzugpp cmd -s $UB_SOCKET -a add -i PREVIEW -x 0 -y 0 --max-width 100 --max-height 100 -f "Mountain Retreat [3840x2160].png"\
 
-: 1690129992:0;ueberzugpp cmd -s $UB_SOCKET -x 10 -y 10 --max-width 100 --max-height 100 -f "Mountain Retreat [3840x2160].png"\
+ueberzugpp cmd -s $UB_SOCKET -x 10 -y 10 --max-width 100 --max-height 100 -f "Mountain Retreat [3840x2160].png"\
 
-: 1690129992:0;cd  ~/.cache/lf
-: 1690129992:0;source previewer.sh
-: 1690129992:0;CACHE="$HOME/.cache/lf/thumbnail.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | awk '{print $1}'))"\
+cd  ~/.cache/lf
+source previewer.sh
+CACHE="$HOME/.cache/lf/thumbnail.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | awk '{print $1}'))"\
 
-: 1690129992:0;brew install sha256sum
-: 1690129992:0;brew install sha3sum
-: 1690129992:0;CACHE="$HOME/.cache/lf/thumbnail.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha3sum | awk '{print $1}'))"\
+brew install sha256sum
+brew install sha3sum
+CACHE="$HOME/.cache/lf/thumbnail.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha3sum | awk '{print $1}'))"\
 
-: 1690129992:0;readlink -f bin/lfub
-: 1690129992:0;readlink -f Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;readlink -f Mountain\ Retreat\ \[3840x2160\].png | sha3sum
-: 1690129992:0;readlink -f Mountain\ Retreat\ \[3840x2160\].png | sha3sum | awk '{pring $1}'
-: 1690129992:0;stat clear_img.sh
-: 1690129992:0;stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")"
-: 1690129992:0;stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")"
-: 1690129992:0;stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")" | sha3sum
-: 1690129992:0;stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")" | sha3sum | awk '{printf $1}'
-: 1690129992:0;lfub
-: 1690129992:0;v test.log
-: 1690129992:0;ls > test.log
-: 1690129992:0;bat test.log
-: 1690129992:0;z pictures
-: 1690129992:0;ffmpegthumbnailer -i Mountain\ Retreat\ \[3840x2160\].png -o test.png -s 0
-: 1690129992:0;open test.png
-: 1690129992:0;w3imgdisplay
-: 1690129992:0;brew install w3imgdisplay
-: 1690129992:0;brew install exiftool
-: 1690129992:0;exiftool Mountain\ Retreat\ \[3840x2160\].png
-: 1690129992:0;v alacritty-old.yml
-: 1690129992:0;tmux 
-: 1690129992:0;z lc
-: 1690129992:0;exiftool Jenkinsfile
-: 1690129992:0;v ~/.config/lf/lfrc
-: 1690129992:0;z lf
-: 1690129992:0;v previewer.sh
-: 1690129992:0;v .zshrc
-: 1690129992:0;echo $id
-: 1690129992:0;lf -remote 'send $id echo hello'
-: 1690129992:0;lf -remote 'send $id %echo hello'
-: 1690129992:0;lf -remote "send $id set ratios 1:2"
-: 1690129992:0;go run
-: 1690129992:0;touch go.mod
-: 1690129992:0;brew uninstall go
-: 1690129992:0;go version
-: 1690129992:0;echo $GOPATH\
+readlink -f bin/lfub
+readlink -f Mountain\ Retreat\ \[3840x2160\].png
+readlink -f Mountain\ Retreat\ \[3840x2160\].png | sha3sum
+readlink -f Mountain\ Retreat\ \[3840x2160\].png | sha3sum | awk '{pring $1}'
+stat clear_img.sh
+stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")"
+stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")"
+stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")" | sha3sum
+stat -f '%n\0%i\0%F\0%s\0%W\0%Y' "$(readlink -f "bin/lfub")" | sha3sum | awk '{printf $1}'
+lfub
+v test.log
+ls > test.log
+bat test.log
+z pictures
+ffmpegthumbnailer -i Mountain\ Retreat\ \[3840x2160\].png -o test.png -s 0
+open test.png
+w3imgdisplay
+brew install w3imgdisplay
+brew install exiftool
+exiftool Mountain\ Retreat\ \[3840x2160\].png
+v alacritty-old.yml
+tmux 
+z lc
+exiftool Jenkinsfile
+v ~/.config/lf/lfrc
+z lf
+v previewer.sh
+echo $id
+lf -remote 'send $id echo hello'
+lf -remote 'send $id %echo hello'
+lf -remote "send $id set ratios 1:2"
+go run
+touch go.mod
+brew uninstall go
+go version
+echo $GOPATH\
 
-: 1690129992:0;cd /usr/
-: 1690129992:0;rm -rf go
-: 1690129992:0;sudo rm -rf go
-: 1690129992:0;chmod +x main.go
-: 1690129992:0;chmod u+x main.go
-: 1690129992:0;go mod init
-: 1690129992:0;go build
-: 1690129992:0;chmod +x main
-: 1690129992:0;go mod download fyne.io/fyne/v2 
-: 1690129992:0;go mod download fyne.io/systray
-: 1690129992:0;go get fyne.io/fyne/v2
-: 1690129992:0;go list -m
-: 1690129992:0;go list -m all
-: 1690129992:0;ps -ef --forest
-: 1690129992:0;ps -ef 
-: 1690129992:0;go run main
-: 1690129992:0;locate maccy
-: 1690129992:0;which maccy
-: 1690129992:0;launchctl | man
-: 1690129992:0;man launchctl
-: 1690129992:0;brew install bytop
-: 1690129992:0;brew install bpytop
-: 1690129992:0;/Applications/Maccy.app/Contents/MacOS/Maccy
-: 1690129992:0;cd
-: 1690129992:0;cd -
-: 1690129992:0;cd Maccy.app
-: 1690129992:0;la
-: 1690129992:0;alias
-: 1690129992:0;alias | bat
-: 1690129992:0;shortcuts run 'Open maccy'
-: 1690129992:0;man ps
-: 1690129992:0;if [ -n $(ps | rg maccy) ]; then echo test if\
+cd /usr/
+rm -rf go
+sudo rm -rf go
+chmod +x main.go
+chmod u+x main.go
+go mod init
+go build
+chmod +x main
+go mod download fyne.io/fyne/v2 
+go mod download fyne.io/systray
+go get fyne.io/fyne/v2
+go list -m
+go list -m all
+ps -ef --forest
+ps -ef 
+go run main
+locate maccy
+which maccy
+launchctl | man
+man launchctl
+brew install bytop
+brew install bpytop
+/Applications/Maccy.app/Contents/MacOS/Maccy
+cd
+cd -
+cd Maccy.app
+alias
+alias | bat
+shortcuts run 'Open maccy'
+man ps
+if [ -n $(ps | rg maccy) ]; then echo test if\
 fi
-: 1690129992:0;pgrep -x 'maccy'
-: 1690129992:0;pgrep 'maccy'
-: 1690129992:0;pgrep
-: 1690129992:0;pgrep 'python'
-: 1690129992:0;ps | rg maccy
-: 1690129992:0;if ps | rg maccy ; then echo test fi
-: 1690129992:0;if ps | rg maccy ; then echo test\
+pgrep -x 'maccy'
+pgrep 'maccy'
+pgrep
+pgrep 'python'
+ps | rg maccy
+if ps | rg maccy ; then echo test fi
+if ps | rg maccy ; then echo test\
 else echo som fi\
 fi
-: 1690129992:0;if ps | rg maccy > dev/null ; then echo test\
+if ps | rg maccy > dev/null ; then echo test\
 else echo som fi\
 fi
-: 1690129992:0;if ps | rg maccy > /dev/null ; then echo test\
+if ps | rg maccy > /dev/null ; then echo test\
 else echo som fi\
 fi
-: 1690129992:0;if ps | rg 'maccy' >/dev/null; then\
+if ps | rg 'maccy' >/dev/null; then\
     echo "The app is already running."\
 else\
 	echo test\
     shortcuts run 'Open maccy'\
 fi
-: 1690129992:0;ps aww
-: 1690129992:0;ps aux | rg 'maccy'
-: 1690129992:0;open -a /Applications/Maccy.app/Contents/MacOS/Maccy
-: 1690129992:0;brew install yq
-: 1690129992:0;yq ~/.config/alacritty/alacritty.yml
-: 1690129992:0;yq .a.b ~/.config/alacritty/a
-: 1690129992:0;yq .a.b ~/.config/alacritty/alacritty.yml
-: 1690129992:0;yq .window.opacity ~/.config/alacritty/alacritty.yml
-: 1690129992:0;yq eval .window.opacity=0.9 -i  ~/.config/alacritty/alacritty.yml
-: 1690129992:0;rm $ALACRITTY_LOG
-: 1690129992:0;v $ALACRITTY_LOG
-: 1690129992:0;z alacritty
-: 1690129992:0;chmod u+x increase-opacity.sh
-: 1690129992:0;yq eval .window.opacity=$(awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1') -i $ymlfile
-: 1690129992:0;yq eval .window.opacity=$(awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1') -i ~/.config/alacritty/alacritty.yml
-: 1690129992:0;awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1'
-: 1690129992:0;awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1"
-: 1690129992:0;awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.2"
-: 1690129992:0;yq eval .window.opacity=$(awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1") -i ~/.config/alacritty/alacritty.yml
-: 1690129992:0;./increase-opacity.sh
-: 1690129992:0;./change-opacity.sh - 0.4
-: 1690129992:0;./change-opacity.sh - 0asdf
-: 1690129992:0;./change-opacity.sh - asdf
-: 1690129992:0;./change-opacity.sh - 0.5
-: 1690129992:0;./change-opacity.sh -
-: 1690129992:0;./change-opacity.sh +
-: 1690129992:0;./change-opacity.sh + 0.5
-: 1690129992:0;v change-opacity.sh
-: 1690129992:0;dopacity 0.4
-: 1690129992:0;dopacity .2
-: 1690129992:0;iopacity 0.2
-: 1690129992:0;bat alacritty.yml
-: 1690129992:0;curl cht.sh/tmux-delete | bat
-: 1690129992:0;curl cht.sh/tmux | bat
-: 1690129992:0;curl cht.sh/yq
-: 1690129992:0;curl cht.sh/yq | bat
-: 1690129992:0;brew install tldrt
-: 1690129992:0;brew install tldr
-: 1690129992:0;tldr yq
-: 1690129992:0;tldr cp-p
-: 1690129992:0;cp-p --help
-: 1690129992:0;mv ~/Desktop/open\ maccy.app ~/Documents/tools/open\ maccy.app
-: 1690129992:0;l ~/Documents/tools
-: 1690129992:0;echo $TERm
-: 1690129992:0;echo $TERM
-: 1690129992:0;ps aux | rg 'cyber'
-: 1690129992:0;ps aux | rg 'cy'
-: 1690129992:0;z worl
-: 1690129992:0;tmux new -s main-session
-: 1690129992:0;curl ipaddres.io
-: 1690129992:0;curl ipaddress.io
-: 1690129992:0;curl parrot.live
-: 1690129992:0;curl 'dict://dict.org/d:operating system'
-: 1690129992:0;curl emailpipe.sh/listen
-: 1690129992:0;curl example.com/api
-: 1690129992:0;curl httpbin.org/get
-: 1690129992:0;curl -X 'GET' \\
+ps aww
+ps aux | rg 'maccy'
+open -a /Applications/Maccy.app/Contents/MacOS/Maccy
+brew install yq
+yq ~/.config/alacritty/alacritty.yml
+yq .a.b ~/.config/alacritty/a
+yq .a.b ~/.config/alacritty/alacritty.yml
+yq .window.opacity ~/.config/alacritty/alacritty.yml
+yq eval .window.opacity=0.9 -i  ~/.config/alacritty/alacritty.yml
+rm $ALACRITTY_LOG
+v $ALACRITTY_LOG
+z alacritty
+chmod u+x increase-opacity.sh
+yq eval .window.opacity=$(awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1') -i $ymlfile
+yq eval .window.opacity=$(awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1') -i ~/.config/alacritty/alacritty.yml
+awk '{print $1+$2}' <<<'$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1'
+awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1"
+awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.2"
+yq eval .window.opacity=$(awk '{print $1+$2}' <<<"$(yq .window.opacity ~/.config/alacritty/alacritty.yml) 0.1") -i ~/.config/alacritty/alacritty.yml
+./increase-opacity.sh
+./change-opacity.sh - 0.4
+./change-opacity.sh - 0asdf
+./change-opacity.sh - asdf
+./change-opacity.sh - 0.5
+./change-opacity.sh -
+./change-opacity.sh +
+./change-opacity.sh + 0.5
+v change-opacity.sh
+dopacity 0.4
+dopacity .2
+iopacity 0.2
+bat alacritty.yml
+curl cht.sh/tmux-delete | bat
+curl cht.sh/tmux | bat
+curl cht.sh/yq
+curl cht.sh/yq | bat
+brew install tldrt
+brew install tldr
+tldr yq
+tldr cp-p
+cp-p --help
+mv ~/Desktop/open\ maccy.app ~/Documents/tools/open\ maccy.app
+l ~/Documents/tools
+echo $TERm
+echo $TERM
+ps aux | rg 'cyber'
+ps aux | rg 'cy'
+z worl
+tmux new -s main-session
+curl ipaddres.io
+curl ipaddress.io
+curl parrot.live
+curl 'dict://dict.org/d:operating system'
+curl emailpipe.sh/listen
+curl example.com/api
+curl httpbin.org/get
+curl -X 'GET' \\
   'https://api.4te.us/Test/get' \\
   -H 'accept: */*'
-: 1690129992:0;curl qrenco.de/hello_world
-: 1690129992:0;tldr sed
-: 1690129992:0;curl cht.sh/sed | bat
-: 1690129992:0;curl cht.sh/ed | bat
-: 1690129992:0;ps aux 
-: 1690129992:0;ps aux | bat
-: 1690129992:0;tmux kill-session
-: 1690129992:0;zsh --no-profile
-: 1690129992:0;ps a
-: 1690129992:0;ps au
-: 1690129992:0;ps aux
-: 1690129992:0;cd lcp-core-
-: 1690129992:0;curl qrenco.de/http://www.linusakesson.net/programming/tty/
-: 1690129992:0;cd /opt/cisco/anyconnect/bin/plugins
-: 1690129992:0;v amp_uninstall.sh
-: 1690129992:0;vpn --help
-: 1690129992:0;vpn
-: 1690129992:0;l | rg roam
-: 1690129992:0;tree .
-: 1690129992:0;tree . | rg road
-: 1690129992:0;tree . | rg roam
-: 1690129992:0;tree . | rg um
-: 1690129992:0;./umbrella_uninstall.sh
-: 1690129992:0;vpn -connect
-: 1690129992:0;./vpn 
-: 1690129992:0;ping webvpnauto.lenovo.com\
+curl qrenco.de/hello_world
+tldr sed
+curl cht.sh/sed | bat
+curl cht.sh/ed | bat
+ps aux 
+ps aux | bat
+zsh --no-profile
+ps a
+ps au
+ps aux
+cd lcp-core-
+curl qrenco.de/http://www.linusakesson.net/programming/tty/
+cd /opt/cisco/anyconnect/bin/plugins
+v amp_uninstall.sh
+vpn --help
+vpn
+l | rg roam
+tree .
+tree . | rg road
+tree . | rg roam
+tree . | rg um
+./umbrella_uninstall.sh
+vpn -connect
+./vpn 
+ping webvpnauto.lenovo.com\
 : 1687838446:0;ping webvpnauto.lenovo.com
-: 1690129992:0;cd mgmttun
-: 1690129992:0;stty -a | rg raw
-: 1690129992:0;v --help
-: 1690129992:0;v -n
-: 1690129992:0;v -h test
-: 1690129992:0;v -h
-: 1690129992:0;v --cmd e temp
-: 1690129992:0;v --cmd e
-: 1690129992:0;v --cmd n
-: 1690129992:0;docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=password -p 8180:8080 --name keycloak-server -d jboss/keycloak:10.0.1
-: 1690129992:0;open http://localhost:8180
-: 1690129992:0;readlink -f FederationMetadatalatest\ \(1\).xml
-: 1690129992:0;mv FederationMetadatalatest\ \(1\).xml saml-file.xml
-: 1690129992:0;jq {\
+cd mgmttun
+stty -a | rg raw
+v --help
+v -n
+v -h test
+v -h
+v --cmd e temp
+v --cmd e
+v --cmd n
+docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=password -p 8180:8080 --name keycloak-server -d jboss/keycloak:10.0.1
+open http://localhost:8180
+readlink -f FederationMetadatalatest\ \(1\).xml
+mv FederationMetadatalatest\ \(1\).xml saml-file.xml
+jq {\
 "authProvider":"OKTA",\
 "emailPairs":[\
   {\
@@ -504,636 +486,616 @@ fi
 ]\
 }\
 
-: 1690129992:0;v azhahesorg-saml-configurations.xml
-: 1690129992:0;docker compose up
-: 1690129992:0;docker exec -it 55228e3423f5 sh
-: 1690129992:0;docker exec -it 55228e3423f5
-: 1690129992:0;docker exec -it 55228e3423f5 bin/bash
-: 1690129992:0;colima stop
-: 1690129992:0;docker-compose up
-: 1690129992:0;iopacity .2
-: 1690129992:0;docker-compose up -d
-: 1690129992:0;docker exec -it 55228e3423f5 bash
-: 1690129992:0;v -d first next
-: 1690129992:0;dopacity .1
-: 1690129992:0;iopacity .1
-: 1690129992:0;passwd
-: 1690129992:0;cleart
-: 1690129992:0;brew install neofetch
-: 1690129992:0;printf 'asubramaniya\nAzhahes-6\ny' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
-: 1690129992:0;printf 'asubramaniya\nAzhahes-6\n232897\ny' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
-: 1690129992:0;printf 'asubramaniya\nAzhahes-6\n104525\n' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
-: 1690129992:0;cd ../bin
-: 1690129992:0;printf 'asubramaniya\nAzhahes-6\n666838\n' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnusrdu01.lenovo.com
-: 1690129992:0;1password
-: 1690129992:0;brew install --cask 1password/tap/1password-cli
-: 1690129992:0;op --version
-: 1690129992:0;op --help | bat
-: 1690129992:0;op item list --help
-: 1690129992:0;op item list --vault work --format=json | op item get
-: 1690129992:0;op item list --vault work --format=json
-: 1690129992:0;op item list --vault work
-: 1690129992:0;op item list --vault work | op item get Lenovo*
-: 1690129992:0;op item list --vault work | op item get "Lenovo vpn"
-: 1690129992:0;wget ifconfig.io
-: 1690129992:0;bat index.html
-: 1690129992:0;z /opt/
-: 1690129992:0;brew edit wget
-: 1690129992:0;v *.patch
-: 1690129992:0;sdk --help
-: 1690129992:0;sdk
-: 1690129992:0;sdk list
-: 1690129992:0;mvn clean build
-: 1690129992:0;mvn clean
-: 1690129992:0;sdk list --help
-: 1690129992:0;sdk list --color=always java
-: 1690129992:0;rm -rf lcp-core-account-management-service
-: 1690129992:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-account-management-service.git
-: 1690129992:0;cd lcp-core-account-management-service
-: 1690129992:0;tmux a
-: 1690129992:0;sdk use 11.0.19-amzn
-: 1690129992:0;sdk use java 11.0.19
-: 1690129992:0;sdk use java 11.0.19-amzn
-: 1690129992:0;mvn clean install -
-: 1690129992:0;mvn clean install -Dskiptest
-: 1690129992:0;mvn test -Dtest=OrganizationResourceV2IT
-: 1690129992:0;sdk list java
-: 1690129992:0;sdk install java 20.0.1-oracle
-: 1690129992:0;sdk install java 17.0.7-oracle
-: 1690129992:0;mvn dependency:tree | bat
-: 1690129992:0;mvn dependency:tree 
-: 1690129992:0;ls -al
-: 1690129992:0;cd .m2
-: 1690129992:0;cd repository
-: 1690129992:0;/Users/azhahes/Downloads/zellij ; exit;
-: 1690129992:0;cargo
-: 1690129992:0;brew install rust
-: 1690129992:0;cargo install --locked zellij\
+v azhahesorg-saml-configurations.xml
+docker compose up
+docker exec -it 55228e3423f5 sh
+docker exec -it 55228e3423f5
+docker exec -it 55228e3423f5 bin/bash
+colima stop
+docker-compose up
+iopacity .2
+docker-compose up -d
+docker exec -it 55228e3423f5 bash
+v -d first next
+dopacity .1
+iopacity .1
+passwd
+cleart
+brew install neofetch
+printf 'asubramaniya\nAzhahes-6\ny' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
+printf 'asubramaniya\nAzhahes-6\n232897\ny' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
+printf 'asubramaniya\nAzhahes-6\n104525\n' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnva32.lenovo.com
+cd ../bin
+printf 'asubramaniya\nAzhahes-6\n666838\n' | /opt/cisco/anyconnect/bin/vpn -s connect webvpnusrdu01.lenovo.com
+1password
+brew install --cask 1password/tap/1password-cli
+op --version
+op --help | bat
+op item list --help
+op item list --vault work --format=json | op item get
+op item list --vault work --format=json
+op item list --vault work
+op item list --vault work | op item get Lenovo*
+op item list --vault work | op item get "Lenovo vpn"
+wget ifconfig.io
+bat index.html
+z /opt/
+brew edit wget
+v *.patch
+sdk --help
+sdk
+sdk list
+mvn clean build
+mvn clean
+sdk list --help
+sdk list --color=always java
+rm -rf lcp-core-account-management-service
+git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-account-management-service.git
+tmux a
+sdk use 11.0.19-amzn
+sdk use java 11.0.19
+sdk use java 11.0.19-amzn
+mvn clean install -
+mvn clean install -Dskiptest
+mvn test -Dtest=OrganizationResourceV2IT
+sdk list java
+sdk install java 20.0.1-oracle
+sdk install java 17.0.7-oracle
+mvn dependency:tree | bat
+mvn dependency:tree 
+ls -al
+cd .m2
+cd repository
+/Users/azhahes/Downloads/zellij ; exit;
+cargo
+brew install rust
+cargo install --locked zellij\
 
-: 1690129992:0;xit
-: 1690129992:0;/Applications/Alacritty.app/Contents/MacOS/alacritty
-: 1690129992:0;$ ls
-: 1690129992:0;type alacritty
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | zsh
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | bash
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask/--cask/g | bash
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask install/install --cask/g | bash
-: 1690129992:0;curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask\ install/install\ --cask/g | bash
-: 1690129992:0;locate alacritty
-: 1690129992:0;v ~/.config/alacritty/alacritty.yml.default
-: 1690129992:0;mkdir ~/.config/zellij\
+xit
+/Applications/Alacritty.app/Contents/MacOS/alacritty
+$ ls
+type alacritty
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | zsh
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | bash
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask/--cask/g | bash
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask install/install --cask/g | bash
+curl -L https://gist.githubusercontent.com/PezCoder/4fd0182de5aacc13a388cdd4c935338c/raw/6d8056282b83a8470adce89e22424a7f55bcde58/install-alacritty.sh | sed s/cask\ install/install\ --cask/g | bash
+locate alacritty
+v ~/.config/alacritty/alacritty.yml.default
+mkdir ~/.config/zellij\
 zellij setup --dump-config > ~/.config/zellij/config.kdl\
 
-: 1690129992:0;v /Users/azhahes/.config/zellij/config.kdl 
-: 1690129992:0;v alacritty.yml
-: 1690129992:0;neofetch
-: 1690129992:0;zellij ls
-: 1690129992:0;man zellij
-: 1690129992:0;zellij run ls
-: 1690129992:0;zellij run
-: 1690129992:0;zellij setup
-: 1690129992:0;v tesst.txt
-: 1690129992:0;zellij --help
-: 1690129992:0;zellij -s main-session
-: 1690129992:0;clea
-: 1690129992:0;builtin cd -- Documents/
-: 1690129992:0;man builtin
-: 1690129992:0;op item --help
-: 1690129992:0;op item create --help
-: 1690129992:0;op item get chatGPT.nvim\
+v /Users/azhahes/.config/zellij/config.kdl 
+v alacritty.yml
+neofetch
+zellij ls
+man zellij
+zellij run ls
+zellij run
+zellij setup
+v tesst.txt
+zellij --help
+zellij -s main-session
+clea
+builtin cd -- Documents/
+man builtin
+op item --help
+op item create --help
+op item get chatGPT.nvim\
 : 1688188673:0;op item get chatGPT.nvim
-: 1690129992:0;op item get --help
-: 1690129992:0;op item get chatGPT.nvim
-: 1690129992:0;op item get chatGPT.nvim --no-newline --fields label=credentialop item get chatGPT.nvim --fields label=credential 
-: 1690129992:0;op item get chatGPT.nvim --fields label=credentialop item get chatGPT.nvim --fields label=credential 
-: 1690129992:0;op item get chatGPT.nvim --fields label=credential
-: 1690129992:0;fd test
-: 1690129992:0;fd
-: 1690129992:0;iopacity
-: 1690129992:0;dopacity
-: 1690129992:0;v zsh-interactive-cd.plugin.zsh
-: 1690129992:0;mv zsh-interactive-cd.plugin.zsh .zsh-interactive-cd.plugin.zsh
-: 1690129992:0;cd go/
-: 1690129992:0;cd Desktop/
-: 1690129992:0;curl wttr.in
-: 1690129992:0;curl wttr.in/kumbakonam
-: 1690129992:0;ls -la
-: 1690129992:0;ls \
+op item get --help
+op item get chatGPT.nvim
+op item get chatGPT.nvim --no-newline --fields label=credentialop item get chatGPT.nvim --fields label=credential 
+op item get chatGPT.nvim --fields label=credentialop item get chatGPT.nvim --fields label=credential 
+op item get chatGPT.nvim --fields label=credential
+fd test
+fd
+iopacity
+dopacity
+v zsh-interactive-cd.plugin.zsh
+mv zsh-interactive-cd.plugin.zsh .zsh-interactive-cd.plugin.zsh
+cd go/
+cd Desktop/
+curl wttr.in
+curl wttr.in/kumbakonam
+ls -la
+ls \
 cd documents
-: 1690129992:0;fzf | xargs ls
-: 1690129992:0;fzf | xargs bat
-: 1690129992:0;curl cht.sh/fzf | bat
-: 1690129992:0;bat tools/cp-p/README.org 
-: 1690129992:0;op connect
-: 1690129992:0;op item get "lenovo id"
-: 1690129992:0;op item get "Lenovo Id" --fields label=password
-: 1690129992:0;cd /opt/cisco/anyconnect/bin
-: 1690129992:0;cd profile
-: 1690129992:0;v lenovoprofile.xml
-: 1690129992:0;cd anyconnect
-: 1690129992:0;cd Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification.app
-: 1690129992:0;cd Contents/
-: 1690129992:0;readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification
-: 1690129992:0;readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification | clipcopy
-: 1690129992:0;chmod u+x connect-vpn.sh
-: 1690129992:0;man tee
-: 1690129992:0;echo " some text success" | grep success
-: 1690129992:0;if [ echo " some text success" | grep success ]; then echo if; else echo else; fi;
-: 1690129992:0;if [[ echo " some text success" | grep success ]]; then echo if; else echo else; fi;
-: 1690129992:0;cd /Applications
-: 1690129992:0;cd Cisco
-: 1690129992:0;cd Cisco\ AnyConnect\ Secure\ Mobility\ Client.app
-: 1690129992:0;cd cn
-: 1690129992:0;cd Contents
-: 1690129992:0;cd MacOS
-: 1690129992:0;readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client
-: 1690129992:0;readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client | clipcopy
-: 1690129992:0;ping lenovo.com
-: 1690129992:0;ping tc.lenovo.com
-: 1690129992:0;ping confluence.tc.lenovo.com
-: 1690129992:0;ps aux | rg cy
-: 1690129992:0;htop
-: 1690129992:0;top
-: 1690129992:0;echo "+--+\n|  |\n+--+"
-: 1690129992:0;uptime
-: 1690129992:0;python3 -m simpleHTTPServer 8000
-: 1690129992:0;curl ipecho.net
-: 1690129992:0;curl ipecho.net/plain
-: 1690129992:0;curl ipecho.net/plain; echo
-: 1690129992:0;osascript -e 'display notification "This message should be showing on the notification" with title "Coding Tips" subtitle "blog.petehouston.com" sound name "Pop"'
-: 1690129992:0;osascript -e 'display notification "This message should be showing on the notification"'
-: 1690129992:0;mdfind tesst
-: 1690129992:0;mdfind mountain
-: 1690129992:0;mdls mountain
-: 1690129992:0;cd 
-: 1690129992:0;cd Pictures
-: 1690129992:0;mdls sunset-illustration.jpg
-: 1690129992:0;man readline
-: 1690129992:0;set -o emacs
-: 1690129992:0;set -o vi
-: 1690129992:0;celar
-: 1690129992:0;fd tes
-: 1690129992:0;#kill -9 4982 
-: 1690129992:0;zellij
-: 1690129992:0;echo "http:\\google.com" | open
-: 1690129992:0;echo "http:\\google.com" | open -a
-: 1690129992:0;echo "http:\\google.com" | xargs open
-: 1690129992:0;z vault
-: 1690129992:0;op signin
-: 1690129992:0;curl ifconfig.co
-: 1690129992:0;op --help
-: 1690129992:0;op --help | rg status
-: 1690129992:0;op item list
-: 1690129992:0;ifconfig
-: 1690129992:0;launchctl
-: 1690129992:0;launchctl list | rg cyber
-: 1690129992:0;kill -9 2049
-: 1690129992:0;sudo kill -g 2049
-: 1690129992:0;sudo kill -9 2049
-: 1690129992:0;sudo kill -9 2077
-: 1690129992:0;launchctl list | rg cy
-: 1690129992:0;launchctl list --help
-: 1690129992:0;launchctl 
-: 1690129992:0;launchctl plish
-: 1690129992:0;launchctl plist
-: 1690129992:0;launchctl list
-: 1690129992:0;bpytop
-: 1690129992:0;launchctl list | rg 3344 | 3550
-: 1690129992:0;launchctl list | rg 3344
-: 1690129992:0;launchctl list | rg 3550
-: 1690129992:0;sudo launchctl list | rg 3550
-: 1690129992:0;sudo launchctl list | rg cyber
-: 1690129992:0;sudo launchctl list | rg cy
-: 1690129992:0;sudo launchctl list | rg len
-: 1690129992:0;sudo launchctl list | rg moto
-: 1690129992:0;sudo launchctl list
-: 1690129992:0;launchctl list com.apple.corebrightnessd
-: 1690129992:0;launchctl list com.apple.sysmond
-: 1690129992:0;sudo launchctl list com.apple.sysmond
-: 1690129992:0;locate activeprobe
-: 1690129992:0;/private/var/db/receipts/
-: 1690129992:0;v com.cybereason.pkg.activeprobe.plist
-: 1690129992:0;cd /
-: 1690129992:0;locate cybereason
-: 1690129992:0;open CiscoAnyConnect4.10.app
-: 1690129992:0;z d
-: 1690129992:0;v CybereasonMac.pkg
-: 1690129992:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-mqtt-rate-limiter-proxy.git
-: 1690129992:0;cd lcp-core-mqtt-rate-limiter-proxy
-: 1690129992:0;cd /opt/cisco/anyconnect/
-: 1690129992:0;cd AMPEnabler
-: 1690129992:0;cd bib
-: 1690129992:0;sudo ./amp_uninstall.sh
-: 1690129992:0;sudo ./umbrella_uninstall.sh
-: 1690129992:0;./amp_uninstall.sh
-: 1690129992:0;python3 mqtt-connection-state-events-check
-: 1690129992:0;pip3 requests
-: 1690129992:0;pip3 install requesta
-: 1690129992:0;pip3 install requests
-: 1690129992:0;pip3 install paho
-: 1690129992:0;pip3 install paho-client
-: 1690129992:0;pip3 install paho-mqtt
-: 1690129992:0;python3 mqtt-connection-state-events-check.py
-: 1690129992:0;v mqtt-connection-state-events-check.py
-: 1690129992:0;npm install -g jwt-cli
-: 1690129992:0;jwt --version
-: 1690129992:0;d
-: 1690129992:0;d left right
-: 1690129992:0;l | fzf
-: 1690129992:0;cd ~\
+fzf | xargs ls
+fzf | xargs bat
+curl cht.sh/fzf | bat
+bat tools/cp-p/README.org 
+op connect
+op item get "lenovo id"
+op item get "Lenovo Id" --fields label=password
+cd /opt/cisco/anyconnect/bin
+cd profile
+v lenovoprofile.xml
+cd anyconnect
+cd Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification.app
+cd Contents/
+readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification
+readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client\ Notification | clipcopy
+chmod u+x connect-vpn.sh
+man tee
+echo " some text success" | grep success
+if [ echo " some text success" | grep success ]; then echo if; else echo else; fi;
+if [[ echo " some text success" | grep success ]]; then echo if; else echo else; fi;
+cd /Applications
+cd Cisco
+cd Cisco\ AnyConnect\ Secure\ Mobility\ Client.app
+cd cn
+cd Contents
+cd MacOS
+readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client
+readlink -f Cisco\ AnyConnect\ Secure\ Mobility\ Client | clipcopy
+ping lenovo.com
+ping tc.lenovo.com
+ping confluence.tc.lenovo.com
+ps aux | rg cy
+htop
+top
+echo "+--+\n|  |\n+--+"
+uptime
+python3 -m simpleHTTPServer 8000
+curl ipecho.net
+curl ipecho.net/plain
+curl ipecho.net/plain; echo
+osascript -e 'display notification "This message should be showing on the notification" with title "Coding Tips" subtitle "blog.petehouston.com" sound name "Pop"'
+osascript -e 'display notification "This message should be showing on the notification"'
+mdfind tesst
+mdfind mountain
+mdls mountain
+cd 
+cd Pictures
+mdls sunset-illustration.jpg
+man readline
+set -o emacs
+set -o vi
+celar
+fd tes
+#kill -9 4982 
+zellij
+echo "http:\\google.com" | open
+echo "http:\\google.com" | open -a
+echo "http:\\google.com" | xargs open
+z vault
+op signin
+curl ifconfig.co
+op --help
+op --help | rg status
+op item list
+ifconfig
+launchctl
+launchctl list | rg cyber
+kill -9 2049
+sudo kill -g 2049
+sudo kill -9 2049
+sudo kill -9 2077
+launchctl list | rg cy
+launchctl list --help
+launchctl 
+launchctl plish
+launchctl plist
+launchctl list
+bpytop
+launchctl list | rg 3344 | 3550
+launchctl list | rg 3344
+launchctl list | rg 3550
+sudo launchctl list | rg 3550
+sudo launchctl list | rg cyber
+sudo launchctl list | rg cy
+sudo launchctl list | rg len
+sudo launchctl list | rg moto
+sudo launchctl list
+launchctl list com.apple.corebrightnessd
+launchctl list com.apple.sysmond
+sudo launchctl list com.apple.sysmond
+locate activeprobe
+/private/var/db/receipts/
+v com.cybereason.pkg.activeprobe.plist
+cd /
+locate cybereason
+open CiscoAnyConnect4.10.app
+z d
+v CybereasonMac.pkg
+git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-mqtt-rate-limiter-proxy.git
+cd lcp-core-mqtt-rate-limiter-proxy
+cd /opt/cisco/anyconnect/
+cd AMPEnabler
+cd bib
+sudo ./amp_uninstall.sh
+sudo ./umbrella_uninstall.sh
+./amp_uninstall.sh
+python3 mqtt-connection-state-events-check
+pip3 requests
+pip3 install requesta
+pip3 install requests
+pip3 install paho
+pip3 install paho-client
+pip3 install paho-mqtt
+python3 mqtt-connection-state-events-check.py
+v mqtt-connection-state-events-check.py
+npm install -g jwt-cli
+jwt --version
+d
+d left right
+l | fzf
+cd ~\
 touch .hushlogin
-: 1690129992:0;mvn clean install -Dskiptests
-: 1690129992:0;cd .git
-: 1690129992:0;cd hooks
-: 1690129992:0;v pre-commit
-: 1690129992:0;v .talismanrc
-: 1690129992:0;v ~/.vimrc
-: 1690129992:0;v .obsidian
-: 1690129992:0;v temp
-: 1690129992:0;rm temp
-: 1690129992:0;fc
-: 1690129992:0;ls -a
-: 1690129992:0;echo "http:\\google.com"
-: 1690129992:0;v tesyt
-: 1690129992:0;nvim
-: 1690129992:0;clar
-: 1690129992:0;grep som
-: 1690129992:0;grep val
-: 1690129992:0;bat stdout.txt
-: 1690129992:0;man sigwinch
-: 1690129992:0;v ~/.tmux.conf
-: 1690129992:0;stty
-: 1690129992:0;stty -a
-: 1690129992:0;tmux -a
-: 1690129992:0;tmux ls
-: 1690129992:0;tmux -a 1
-: 1690129992:0;tmux -attach 1
-: 1690129992:0;jobs --help
-: 1690129992:0;man jobs
-: 1690129992:0;fg 1
-: 1690129992:0;jobs
-: 1690129992:0;man tty
-: 1690129992:0;tty -s
-: 1690129992:0;pstree
-: 1690129992:0;ps
-: 1690129992:0;z terminal-emulator
-: 1690129992:0;mkcd open-source
-: 1690129992:0;git clone git@github.com:liamg/darktile.git
-: 1690129992:0;cd darktile
-: 1690129992:0;go run cmd/darktile/main.go
-: 1690129992:0;rm -rf darktile
-: 1690129992:0;git clone git@github.com:fyne-io/terminal.git
-: 1690129992:0;go run cmd/fyneterm/main.go
-: 1690129992:0;brew install --cask raycast
-: 1690129992:0;.l
-: 1690129992:0;v .vimrc
-: 1690129992:0;cd lcp-core-recurring-revenue-proxy
-: 1690129992:0;mvn clean install -DskipTests
-: 1690129992:0;docker exec -it af9bdcfde63a mongosh
-: 1690129992:0;docker exec -it af9bdcfde63a bash
-: 1690129992:0;brew install mongosh
-: 1690129992:0;mongosh --help
-: 1690129992:0;mongosh mongodh://localhost:32787/recurringrevenueproxy
-: 1690129992:0;fg
-: 1690129992:0;mongo --version
-: 1690129992:0;mongosh --version
-: 1690129992:0;mongosh mongodb://localhost:32787/recurringrevenueproxy
-: 1690129992:0;cd .
-: 1690129992:0;cd ..'\
+mvn clean install -Dskiptests
+cd .git
+cd hooks
+v pre-commit
+v .talismanrc
+v ~/.vimrc
+v .obsidian
+v temp
+rm temp
+fc
+ls -a
+echo "http:\\google.com"
+v tesyt
+nvim
+clar
+grep som
+grep val
+bat stdout.txt
+man sigwinch
+v ~/.tmux.conf
+stty
+stty -a
+tmux -a
+tmux ls
+tmux -a 1
+tmux -attach 1
+jobs --help
+man jobs
+fg 1
+jobs
+man tty
+tty -s
+pstree
+ps
+z terminal-emulator
+mkcd open-source
+git clone git@github.com:liamg/darktile.git
+cd darktile
+go run cmd/darktile/main.go
+rm -rf darktile
+git clone git@github.com:fyne-io/terminal.git
+go run cmd/fyneterm/main.go
+brew install --cask raycast
+.l
+v .vimrc
+cd lcp-core-recurring-revenue-proxy
+mvn clean install -DskipTests
+docker exec -it af9bdcfde63a mongosh
+docker exec -it af9bdcfde63a bash
+brew install mongosh
+mongosh --help
+mongosh mongodh://localhost:32787/recurringrevenueproxy
+fg
+mongo --version
+mongosh --version
+mongosh mongodb://localhost:32787/recurringrevenueproxy
+cd .
+cd ..'\
 
-: 1690129992:0;curl ifconfig.co 
-: 1690129992:0;colima start
-: 1690129992:0;v ./connect-vpn.sh
-: 1690129992:0;cd Downloads
-: 1690129992:0;open CybereasonMac.pkg
-: 1690129992:0;mongosh mongodb://localhost:32771/recurringrevenueproxy
-: 1690129992:0;docker ps
-: 1690129992:0;docker ps -a
-: 1690129992:0;vimtutor
-: 1690129992:0;brew install hammerspoon --cask
-: 1690129992:0;cd .obsidian
-: 1690129992:0;cd snippets
-: 1690129992:0;v extended-colorschemes.css
-: 1690129992:0;v style-sheet.css `
-: 1690129992:0;v style-sheet.css
-: 1690129992:0;rm style-sheet.css
-: 1690129992:0;v floating-search-bar.css
-: 1690129992:0;v custom-rainbow-colors.css
-: 1690129992:0;v floating-status-bar.css
-: 1690129992:0;v its-frontmatter.css
-: 1690129992:0;rm its-frontmatter.css
-: 1690129992:0;bash <(curl -s https://raw.githubusercontent.com/dbalatero/VimMode.spoon/master/bin/installer)
-: 1690129992:0;open ~/Downloads/CybereasonMac.pkg
-: 1690129992:0;curl ifconfig.co  | clipcopy
-: 1690129992:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak.git
-: 1690129992:0;aws --help
-: 1690129992:0;aws configure sso
-: 1690129992:0;cd .aws/sso
-: 1690129992:0;aws s3 ls --profile azhahes-cli-profie
-: 1690129992:0;aws s3 ls --profile azhahes-cli-profile
-: 1690129992:0;aws sts get-caller-identity --profile azhahes-cli-profile
-: 1690129992:0;aws sts get-caller-identity --profile azhahes-cli-profile | clipcopy
-: 1690129992:0;ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/<Your SSO ID>.json) 
-: 1690129992:0;aws sso login --profile azhahes-cli-profile
-: 1690129992:0;ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)
-: 1690129992:0;aws sts get-caller-identity
-: 1690129992:0;mkcd camera-photor-reader
-: 1690129992:0;go mod init main
-: 1690129992:0;go get -u -d gocv.io/x/gocv
-: 1690129992:0;brew upgrade opencv\
+curl ifconfig.co 
+colima start
+v ./connect-vpn.sh
+cd Downloads
+open CybereasonMac.pkg
+mongosh mongodb://localhost:32771/recurringrevenueproxy
+docker ps
+docker ps -a
+vimtutor
+brew install hammerspoon --cask
+cd .obsidian
+cd snippets
+v extended-colorschemes.css
+v style-sheet.css `
+v style-sheet.css
+rm style-sheet.css
+v floating-search-bar.css
+v custom-rainbow-colors.css
+v floating-status-bar.css
+v its-frontmatter.css
+rm its-frontmatter.css
+bash <(curl -s https://raw.githubusercontent.com/dbalatero/VimMode.spoon/master/bin/installer)
+open ~/Downloads/CybereasonMac.pkg
+curl ifconfig.co  | clipcopy
+git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak.git
+aws --help
+aws configure sso
+cd .aws/sso
+aws s3 ls --profile azhahes-cli-profie
+aws s3 ls --profile azhahes-cli-profile
+aws sts get-caller-identity --profile azhahes-cli-profile
+aws sts get-caller-identity --profile azhahes-cli-profile | clipcopy
+ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/<Your SSO ID>.json) 
+aws sso login --profile azhahes-cli-profile
+ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)
+aws sts get-caller-identity
+mkcd camera-photor-reader
+go mod init main
+go get -u -d gocv.io/x/gocv
+brew upgrade opencv\
 brew install opencv\
 
-: 1690129992:0;idea --help
-: 1690129992:0;idea --version
-: 1690129992:0;main
-: 1690129992:0;./main
-: 1690129992:0;go build main.go
-: 1690129992:0;open image.jpg
-: 1690129992:0;fswebcam
-: 1690129992:0;go get github.com/otiai10/gosseract
-: 1690129992:0;brew install fswebcam
-: 1690129992:0;open captured.jpg
-: 1690129992:0;open bright_captured.jpg
-: 1690129992:0;brew install tesseract
-: 1690129992:0;go get ./...
-: 1690129992:0;open image.png
-: 1690129992:0;go run photo-capture.go
-: 1690129992:0;open captured_image.jpg
-: 1690129992:0;curl cht.sh/golang-pointer | bat
-: 1690129992:0;curl cht.sh/go/Pointers | bat
-: 1690129992:0;go build --help
-: 1690129992:0;go build main.go -o build/capture-otp && ./build/capture-otp
-: 1690129992:0;go build -o build/capture-otp
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp -asdf
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp -sw
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp -ssdf | awk '/OTP:/ {print $2}'
-: 1690129992:0;build/capture-otp --help
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp -sw | awk '/OTP:/ {print $2}'
-: 1690129992:0;go build -o build/capture-otp && ./build/capture-otp -sw 
-: 1690129992:0;build/capture-otp
-: 1690129992:0;build/capture-otp -sw
-: 1690129992:0;cd /bin
-: 1690129992:0;man [
-: 1690129992:0;cd Cellar
-: 1690129992:0;echo $path
-: 1690129992:0;l | bat
-: 1690129992:0;cd local
-: 1690129992:0;cd build
-: 1690129992:0;rm captured_image.jpg
-: 1690129992:0;rm *.png
-: 1690129992:0;rm *.jpg
-: 1690129992:0;rm main
-: 1690129992:0;rm build
-: 1690129992:0;rm -rf build
-: 1690129992:0;ls ~
-: 1690129992:0;cd /usr/tmp
-: 1690129992:0;cd /usr/temp
-: 1690129992:0;cd /usr/local/
-: 1690129992:0;echo $tmpdir
-: 1690129992:0;echo $TMPDIR
-: 1690129992:0;go run main.go
-: 1690129992:0;git config pull.rebase true
-: 1690129992:0;go build -o capture-otp
-: 1690129992:0;mv capture-otp /usr/local/bin
-: 1690129992:0;open ~/Pictures/captured_image.jpg
-: 1690129992:0;v connect-vpn.sh
-: 1690129992:0;./connect-vpn.sh -x
-: 1690129992:0;cd /usr/local/bin
-: 1690129992:0;rm capture-otp
-: 1690129992:0;go install github.com/azhahes/capture-otp/capture-otp
-: 1690129992:0;go install github.com/azhahes/capture-otp/capture-otp@latest
-: 1690129992:0;go install github.com/azhahes/capture-otp\
+idea --help
+idea --version
+main
+./main
+go build main.go
+open image.jpg
+fswebcam
+go get github.com/otiai10/gosseract
+brew install fswebcam
+open captured.jpg
+open bright_captured.jpg
+brew install tesseract
+go get ./...
+open image.png
+go run photo-capture.go
+open captured_image.jpg
+curl cht.sh/golang-pointer | bat
+curl cht.sh/go/Pointers | bat
+go build --help
+go build main.go -o build/capture-otp && ./build/capture-otp
+go build -o build/capture-otp
+go build -o build/capture-otp && ./build/capture-otp
+go build -o build/capture-otp && ./build/capture-otp -asdf
+go build -o build/capture-otp && ./build/capture-otp -sw
+go build -o build/capture-otp && ./build/capture-otp -ssdf | awk '/OTP:/ {print $2}'
+build/capture-otp --help
+go build -o build/capture-otp && ./build/capture-otp -sw | awk '/OTP:/ {print $2}'
+go build -o build/capture-otp && ./build/capture-otp -sw 
+build/capture-otp
+build/capture-otp -sw
+cd /bin
+man [
+cd Cellar
+echo $path
+l | bat
+cd local
+cd build
+rm captured_image.jpg
+rm *.png
+rm *.jpg
+rm main
+rm build
+rm -rf build
+ls ~
+cd /usr/tmp
+cd /usr/temp
+cd /usr/local/
+echo $tmpdir
+echo $TMPDIR
+go run main.go
+git config pull.rebase true
+go build -o capture-otp
+mv capture-otp /usr/local/bin
+open ~/Pictures/captured_image.jpg
+v connect-vpn.sh
+./connect-vpn.sh -x
+cd /usr/local/bin
+rm capture-otp
+go install github.com/azhahes/capture-otp/capture-otp
+go install github.com/azhahes/capture-otp/capture-otp@latest
+go install github.com/azhahes/capture-otp\
 
-: 1690129992:0;go install github.com/azhahes/capture-otp/capture-otp@latest\
+go install github.com/azhahes/capture-otp/capture-otp@latest\
 
-: 1690129992:0;go mod tidy
-: 1690129992:0;go install github.com/azhahes/capture-otp@latest\
+go mod tidy
+go install github.com/azhahes/capture-otp@latest\
 
-: 1690129992:0;cd $GOPATH
-: 1690129992:0;cd pkg
-: 1690129992:0;rm capture-otp@v0.0.0-20230715161105-47a7f1b02e87
-: 1690129992:0;rm azhahes
-: 1690129992:0;go clean -i
-: 1690129992:0;go install github.com/azhahes/capture-otp@a21e4de3e51bfc8220c1819df898c3ff3d3397cc
-: 1690129992:0;cd go
-: 1690129992:0;cd capture-otp@v0.0.0-20230715163930-a21e4de3e51b
-: 1690129992:0;cd .....
-: 1690129992:0;cd bin
-: 1690129992:0;gol
-: 1690129992:0;go env GOBIN
-: 1690129992:0;echo $PATH
-: 1690129992:0;guru --help
-: 1690129992:0;go clean -modcache
-: 1690129992:0;go install github.com/azhahes/capture-otp
-: 1690129992:0;cd pkg/mod/github.com/azhahes
-: 1690129992:0;rm -rf capture-otp@v0.0.0-20230715161105-47a7f1b02e87
-: 1690129992:0;sudo rm -rf capture-otp@v0.0.0-20230715161105-47a7f1b02e87
-: 1690129992:0;rm -rf azhahes
-: 1690129992:0;cd mod
-: 1690129992:0;cd download
-: 1690129992:0;cd github.com
-: 1690129992:0;cd azhahes
-: 1690129992:0;cd capture-otp
-: 1690129992:0;cd ....
-: 1690129992:0;cd ...
-: 1690129992:0;cd cache
-: 1690129992:0;rm -rf download
-: 1690129992:0;go install github.com/azhahes/capture-otp@latest
-: 1690129992:0;go install github.com/azhahes/capture-otp@v0.0.1
-: 1690129992:0;capture-otp --help
-: 1690129992:0;if ! type "$op" > /dev/null; then\
+cd $GOPATH
+cd pkg
+rm capture-otp@v0.0.0-20230715161105-47a7f1b02e87
+rm azhahes
+go clean -i
+go install github.com/azhahes/capture-otp@a21e4de3e51bfc8220c1819df898c3ff3d3397cc
+cd go
+cd capture-otp@v0.0.0-20230715163930-a21e4de3e51b
+cd .....
+cd bin
+gol
+go env GOBIN
+echo $PATH
+guru --help
+go clean -modcache
+go install github.com/azhahes/capture-otp
+cd pkg/mod/github.com/azhahes
+rm -rf capture-otp@v0.0.0-20230715161105-47a7f1b02e87
+sudo rm -rf capture-otp@v0.0.0-20230715161105-47a7f1b02e87
+rm -rf azhahes
+cd mod
+cd download
+cd github.com
+cd azhahes
+cd capture-otp
+cd ....
+cd ...
+cd cache
+rm -rf download
+go install github.com/azhahes/capture-otp@latest
+go install github.com/azhahes/capture-otp@v0.0.1
+capture-otp --help
+if ! type "$op" > /dev/null; then\
 echo "test\
 fi\
 "
-: 1690129992:0;if ! type "$op" > /dev/null; then\
+if ! type "$op" > /dev/null; then\
 echo "test"\
 fi\
 
-: 1690129992:0;if ! type "$opdsfasdf" > /dev/null; then\
+if ! type "$opdsfasdf" > /dev/null; then\
 echo "test"\
 fi\
 
-: 1690129992:0;type op
-: 1690129992:0;type capture-otp
-: 1690129992:0;type capture-otp > /dev/null
-: 1690129992:0;if ! type op > /dev/null; then\
+type op
+type capture-otp
+type capture-otp > /dev/null
+if ! type op > /dev/null; then\
 echo "test"\
 fi\
 
-: 1690129992:0;if ! type opasdf > /dev/null; then\
+if ! type opasdf > /dev/null; then\
 echo "test"\
 fi\
 
-: 1690129992:0;brew search op
-: 1690129992:0;./connect-vpn.sh
-: 1690129992:0;z work
-: 1690129992:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak-data-migration.git
-: 1690129992:0;cd lcp-core-keycloak-data-migration
-: 1690129992:0;idea .
-: 1690129992:0;echo $TMUX
-: 1690129992:0;echo ${UID}
-: 1690129992:0;v ~/.zshrc
-: 1690129992:0;ps aux | rg cisco
-: 1690129992:0;ps aux | rg anyconnect
-: 1690129992:0;v ~/connect-vpn.sh
-: 1690129992:0;ps aux | rg mobility
-: 1690129992:0;connect-vpn.sh
-: 1690129992:0;xmllint
-: 1690129992:0;xmllint --help
-: 1690129992:0;capture-otp -sw
-: 1690129992:0;chmod u+x test.sh
-: 1690129992:0;./test.sh
-: 1690129992:0;v test.sh
-: 1690129992:0;ls | ./test.sh
-: 1690129992:0;tty
-: 1690129992:0;cd downloads
-: 1690129992:0;ls | rg fed
-: 1690129992:0;ls | rg Fed
-: 1690129992:0;v FederationMetadatalatest\ \(1\).xml
-: 1690129992:0;test /Users/azhahes/Downloads/FederationMetadatalatest (1).xml
-: 1690129992:0;test "/Users/azhahes/Downloads/FederationMetadatalatest (1).xml"
-: 1690129992:0;~/connect-vpn.sh
-: 1690129992:0;z Workspace
-: 1690129992:0;cd tools
-: 1690129992:0;git clone git@github.com:LazyVim/LazyVim.git
-: 1690129992:0;ls	
-: 1690129992:0;v LazyVim
-: 1690129992:0;v ~/.hammerspoon/init.lua
-: 1690129992:0;mkdir -p ~/.hammerspoon/Spoons\
+brew search op
+./connect-vpn.sh
+z work
+git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak-data-migration.git
+cd lcp-core-keycloak-data-migration
+idea .
+echo $TMUX
+echo ${UID}
+v ~/.zshrc
+ps aux | rg cisco
+ps aux | rg anyconnect
+v ~/connect-vpn.sh
+ps aux | rg mobility
+connect-vpn.sh
+xmllint
+xmllint --help
+capture-otp -sw
+chmod u+x test.sh
+./test.sh
+v test.sh
+ls | ./test.sh
+tty
+cd downloads
+ls | rg fed
+ls | rg Fed
+v FederationMetadatalatest\ \(1\).xml
+test /Users/azhahes/Downloads/FederationMetadatalatest (1).xml
+test "/Users/azhahes/Downloads/FederationMetadatalatest (1).xml"
+cd tools
+git clone git@github.com:LazyVim/LazyVim.git
+ls	
+v LazyVim
+v ~/.hammerspoon/init.lua
+mkdir -p ~/.hammerspoon/Spoons\
 \
 git clone https://github.com/jasonrudolph/ControlEscape.spoon.git ~/.hammerspoon/Spoons/ControlEscape.spoon\
 \
 cd ~/.hammerspoon/Spoons/ControlEscape.spoon\
 \
 script/setup
-: 1690129992:0;brew update && script/setup
-: 1690129992:0;v script
-: 1690129992:0;echo < README.md
-: 1690129992:0;brew info hammerspoon
-: 1690129992:0;brew info hammerspoon | grep "hammerspoon:"
-: 1690129992:0;tmux
-: 1690129992:0;z spoon
-: 1690129992:0;v README.md
-: 1690129992:0;z wo
-: 1690129992:0;cd open-source
-: 1690129992:0;cd terminal
-: 1690129992:0;v term.go
-: 1690129992:0;z knowledge-vault
-: 1690129992:0;v test
-: 1690129992:0;brew install syncthing
-: 1690129992:0;cd Library
-: 1690129992:0;cd Mobile\ Documents
-: 1690129992:0;ls | rg si
-: 1690129992:0;cd iCloud\~md\~obsidian
-: 1690129992:0;cd Documents
-: 1690129992:0;cd knowledge-vault
-: 1690129992:0;v .obsidian.vimrc
-: 1690129992:0;z --list
-: 1690129992:0;z --help
-: 1690129992:0;man z
-: 1690129992:0;man zoxide
-: 1690129992:0;zi knowl
-: 1690129992:0;clear
-: 1690129992:0;v capture
-: 1690129992:0;z capture
-: 1690129992:0;zi capture
-: 1690129992:0;zi otp
-: 1690129992:0;z worksapce
-: 1690129992:0;z workspace
-: 1690129992:0;cd sample-apps
-: 1690129992:0;cd camera-photo-reader
-: 1690129992:0;z _
-: 1690129992:0;z-
-: 1690129992:0;z -
-: 1690129992:0;z camera-photo-reader
-: 1690129992:0;v main.go
-: 1690129992:0;rm dot_zshrc
-: 1690129992:0;chezmoi add ~/.zshrc
-: 1690129992:0;v dot_zshrc
-: 1690129992:0;git status
-: 1690129992:0;chezmoi add ~/.config
-: 1690129992:0;cd .config
-: 1690129992:0;chezmoi add ~/.config/alacritty
-: 1690129992:0;chezmoi add ~/.config/lf
-: 1690129992:0;cd chezmoi
-: 1690129992:0;ps -ef --tree
-: 1690129992:0;chezmoi add ~/.hammerspoon
-: 1690129992:0;v .gitignore
-: 1690129992:0;chezmoi add ~/.tmux.conf
-: 1690129992:0;chezmoi add ~/.ideavimrc ~/.vimrc
-: 1690129992:0;chezmoi --help
-: 1690129992:0;git re-a
-: 1690129992:0;git re-add
-: 1690129992:0;v .chezmoiignore
-: 1690129992:0;z ssh
-: 1690129992:0;z .ssh
-: 1690129992:0;v config
-: 1690129992:0;v .config/chezmoi/chezmoi.toml
-: 1690129992:0;v ~/.config/alacritty/alacritty.yml
-: 1690129992:0;chezmoi cd
-: 1690129992:0;lazygit
-: 1690129992:0;chezmoi re-add
-: 1690129992:0;v $MyVIMRC
-: 1690129992:0;cd .config/nvim/lua
-: 1690129992:0;cd ..
-: 1690129992:0;v init.lua
-: 1690129992:0;chezmoi diff
-: 1690129992:0;chezmoi add ~/.config/nvim
-: 1690129992:0;z
-: 1690129992:0;brew install lsd
-: 1690129992:0;lsd
-: 1690129992:0;lsd -a
-: 1690129992:0;lsd -al
-: 1690129992:0;v
-: 1690129992:0;source ~/.zshrc
-: 1690129992:0;c
-: 1690129992:0;v .zshenv
-: 1690129992:0;z downloads
-: 1690129992:0;ls
-: 1690129992:0;l
-: 1690129992:0;lf
-: 1690129992:0;v ~/.config/zsh/.zshrc
-: 1690129992:0;source ~/.config/zsh/.zshrc
-: 1690129992:0;exit
-: 1690129992:0;oh-my-zsh
-: 1690129992:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-: 1690129974:0;oh-my-zsh
-: 1690129991:0;exir
-: 1690129992:0;exit
-ls
-lf
-c
+brew update && script/setup
+v script
+echo < README.md
+brew info hammerspoon
+brew info hammerspoon | grep "hammerspoon:"
+z spoon
+v README.md
+z wo
+cd open-source
+cd terminal
+v term.go
+z knowledge-vault
+v test
+brew install syncthing
+cd Library
+cd Mobile\ Documents
+ls | rg si
+cd iCloud\~md\~obsidian
+cd Documents
+cd knowledge-vault
+v .obsidian.vimrc
+z --list
+z --help
+man z
+man zoxide
+zi knowl
+clear
+v capture
+z capture
+zi capture
+zi otp
+z worksapce
+cd sample-apps
+cd camera-photo-reader
+z _
+z-
+z -
+v main.go
+rm dot_zshrc
+chezmoi add ~/.zshrc
+v dot_zshrc
+git status
+chezmoi add ~/.config
+cd .config
+chezmoi add ~/.config/alacritty
+chezmoi add ~/.config/lf
+cd chezmoi
+ps -ef --tree
+chezmoi add ~/.hammerspoon
+v .gitignore
+chezmoi add ~/.tmux.conf
+chezmoi add ~/.ideavimrc ~/.vimrc
+chezmoi --help
+git re-a
+git re-add
+v .chezmoiignore
+z ssh
+z .ssh
+v config
+v .config/chezmoi/chezmoi.toml
+v ~/.config/alacritty/alacritty.yml
+chezmoi re-add
+v $MyVIMRC
+cd .config/nvim/lua
+cd ..
+v init.lua
+chezmoi diff
+chezmoi add ~/.config/nvim
+brew install lsd
+lsd
+lsd -a
+lsd -al
+source ~/.zshrc
+v .zshenv
+z downloads
+oh-my-zsh
+exir
 brew install starship\
 
-v ~/.config/zsh/.zshrc
-source ~/.config/zsh/.zshrc
-c
 z workspace
-ls
 l
-tree
 brew install eda
 brew install exa
 tree
 v ~/.config/zsh/.zshrc
-z
 z Workspace
-ls
 cd lcp-core-account-management-service
-z
 cd .config/zsh/
-ls
-v .zshrc
-source ~/.config/zsh/.zshrc
 z
-lf
-c
 z camera-photo-reader
-c
-ls
 la
 ll
-c
 chezmoi add ~/.config/zsh
+bat keybinds.zsh
+source ~/.config/zsh/.zshrc
+tmux kill-session
+tmux
+conf zsh
+source .zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+z zsh
+v .zshrc
+lf
+~/connect-vpn.sh
+chezmoi cd
+ls
+v
+c
+chezmoi apply
+lazygit
+exit
+chezmoi re-add

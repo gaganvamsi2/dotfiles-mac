@@ -23,9 +23,12 @@ alias v=nvim
 alias d="v -d"
 alias lf=lfcd
 alias iopacity="~/.config/alacritty/change-opacity.sh +"
+alias dopacity="~/.config/alacritty/change-opacity.sh -"
 
 # `exa` aliases for more informative and colored output
 alias la='exa --icons -a --group-directories-first'  # List all files and directories, including hidden ones
 alias ll='exa --icons -lah --group-directories-first'  # List in long format with permissions and human-readable sizes
 alias ls='exa --icons --group-directories-first'  # List files and directories
-alias dopacity="~/.config/alacritty/change-opacity.sh -"
+
+
+alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
