@@ -1106,3 +1106,12 @@ v
 z zsh
 v
 chezmoi re-add
+chezmoi diff
+ls
+rm dot_zshrc
+ls
+chezmoi diff
+la
+v .chezmoiignore
+c
+chezmoi re-add
