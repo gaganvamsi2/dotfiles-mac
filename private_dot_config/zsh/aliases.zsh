@@ -32,3 +32,6 @@ alias ls='exa --icons --group-directories-first'  # List files and directories
 
 alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
 alias cm=chezmoi
+
+alias pstree="pstree -g 2"
+alias vpn="~/connect-vpn.sh"

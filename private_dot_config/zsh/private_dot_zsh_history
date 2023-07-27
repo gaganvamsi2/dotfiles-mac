@@ -57,8 +57,6 @@ git push -u origin HEAD:main
 : 1690213785:0;git submodule update
 : 1690213785:0;cd 004\ Spaces/Work/Projects
 : 1690213785:0;git stuat
-: 1690213785:0;git stutus
-: 1690213785:0;gst
 : 1690213785:0;cd ..'\
 \
 '
@@ -293,7 +291,6 @@ cp -f mv-p /usr/local/bin/\
 : 1690213785:0;v test.log
 : 1690213785:0;ls > test.log
 : 1690213785:0;bat test.log
-: 1690213785:0;z pictures
 : 1690213785:0;ffmpegthumbnailer -i Mountain\ Retreat\ \[3840x2160\].png -o test.png -s 0
 : 1690213785:0;open test.png
 : 1690213785:0;w3imgdisplay
@@ -330,7 +327,6 @@ cp -f mv-p /usr/local/bin/\
 : 1690213785:0;go get fyne.io/fyne/v2
 : 1690213785:0;go list -m
 : 1690213785:0;go list -m all
-: 1690213785:0;ps -ef --forest
 : 1690213785:0;ps -ef 
 : 1690213785:0;go run main
 : 1690213785:0;locate maccy
@@ -444,7 +440,6 @@ fi
 : 1690213785:0;cd /opt/cisco/anyconnect/bin/plugins
 : 1690213785:0;v amp_uninstall.sh
 : 1690213785:0;vpn --help
-: 1690213785:0;vpn
 : 1690213785:0;l | rg roam
 : 1690213785:0;tree .
 : 1690213785:0;tree . | rg road
@@ -587,8 +582,6 @@ zellij setup --dump-config > ~/.config/zellij/config.kdl\
 : 1690213785:0;op item get chatGPT.nvim --fields label=credential
 : 1690213785:0;fd test
 : 1690213785:0;fd
-: 1690213785:0;iopacity
-: 1690213785:0;dopacity
 : 1690213785:0;v zsh-interactive-cd.plugin.zsh
 : 1690213785:0;mv zsh-interactive-cd.plugin.zsh .zsh-interactive-cd.plugin.zsh
 : 1690213785:0;cd go/
@@ -630,8 +623,6 @@ cd documents
 : 1690213785:0;ping tc.lenovo.com
 : 1690213785:0;ping confluence.tc.lenovo.com
 : 1690213785:0;ps aux | rg cy
-: 1690213785:0;htop
-: 1690213785:0;top
 : 1690213785:0;echo "+--+\n|  |\n+--+"
 : 1690213785:0;uptime
 : 1690213785:0;python3 -m simpleHTTPServer 8000
@@ -675,7 +666,6 @@ cd documents
 : 1690213785:0;launchctl plish
 : 1690213785:0;launchctl plist
 : 1690213785:0;launchctl list
-: 1690213785:0;bpytop
 : 1690213785:0;launchctl list | rg 3344 | 3550
 : 1690213785:0;launchctl list | rg 3344
 : 1690213785:0;launchctl list | rg 3550
@@ -724,12 +714,10 @@ touch .hushlogin
 : 1690213785:0;cd .git
 : 1690213785:0;cd hooks
 : 1690213785:0;v pre-commit
-: 1690213785:0;v .talismanrc
 : 1690213785:0;v ~/.vimrc
 : 1690213785:0;v .obsidian
 : 1690213785:0;v temp
 : 1690213785:0;rm temp
-: 1690213785:0;fc
 : 1690213785:0;ls -a
 : 1690213785:0;echo "http:\\google.com"
 : 1690213785:0;v tesyt
@@ -741,9 +729,7 @@ touch .hushlogin
 : 1690213785:0;man sigwinch
 : 1690213785:0;v ~/.tmux.conf
 : 1690213785:0;stty
-: 1690213785:0;stty -a
 : 1690213785:0;tmux -a
-: 1690213785:0;tmux ls
 : 1690213785:0;tmux -a 1
 : 1690213785:0;tmux -attach 1
 : 1690213785:0;jobs --help
@@ -752,8 +738,6 @@ touch .hushlogin
 : 1690213785:0;jobs
 : 1690213785:0;man tty
 : 1690213785:0;tty -s
-: 1690213785:0;pstree
-: 1690213785:0;ps
 : 1690213785:0;z terminal-emulator
 : 1690213785:0;mkcd open-source
 : 1690213785:0;git clone git@github.com:liamg/darktile.git
@@ -836,7 +820,6 @@ brew install opencv\
 : 1690213785:0;go get ./...
 : 1690213785:0;open image.png
 : 1690213785:0;go run photo-capture.go
-: 1690213785:0;open captured_image.jpg
 : 1690213785:0;curl cht.sh/golang-pointer | bat
 : 1690213785:0;curl cht.sh/go/Pointers | bat
 : 1690213785:0;go build --help
@@ -874,11 +857,9 @@ brew install opencv\
 : 1690213785:0;git config pull.rebase true
 : 1690213785:0;go build -o capture-otp
 : 1690213785:0;mv capture-otp /usr/local/bin
-: 1690213785:0;open ~/Pictures/captured_image.jpg
 : 1690213785:0;v connect-vpn.sh
 : 1690213785:0;./connect-vpn.sh -x
 : 1690213785:0;cd /usr/local/bin
-: 1690213785:0;rm capture-otp
 : 1690213785:0;go install github.com/azhahes/capture-otp/capture-otp
 : 1690213785:0;go install github.com/azhahes/capture-otp/capture-otp@latest
 : 1690213785:0;go install github.com/azhahes/capture-otp\
@@ -948,7 +929,6 @@ fi\
 : 1690213785:0;z work
 : 1690213785:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak-data-migration.git
 : 1690213785:0;cd lcp-core-keycloak-data-migration
-: 1690213785:0;idea .
 : 1690213785:0;echo $TMUX
 : 1690213785:0;echo ${UID}
 : 1690213785:0;v ~/.zshrc
@@ -964,7 +944,6 @@ fi\
 : 1690213785:0;./test.sh
 : 1690213785:0;v test.sh
 : 1690213785:0;ls | ./test.sh
-: 1690213785:0;tty
 : 1690213785:0;cd downloads
 : 1690213785:0;ls | rg fed
 : 1690213785:0;ls | rg Fed
@@ -995,7 +974,6 @@ script/setup
 : 1690213785:0;cd terminal
 : 1690213785:0;v term.go
 : 1690213785:0;z knowledge-vault
-: 1690213785:0;v test
 : 1690213785:0;brew install syncthing
 : 1690213785:0;cd Library
 : 1690213785:0;cd Mobile\ Documents
@@ -1009,7 +987,6 @@ script/setup
 : 1690213785:0;man z
 : 1690213785:0;man zoxide
 : 1690213785:0;zi knowl
-: 1690213785:0;clear
 : 1690213785:0;v capture
 : 1690213785:0;z capture
 : 1690213785:0;zi capture
@@ -1020,16 +997,13 @@ script/setup
 : 1690213785:0;z _
 : 1690213785:0;z-
 : 1690213785:0;z -
-: 1690213785:0;v main.go
 : 1690213785:0;chezmoi add ~/.zshrc
 : 1690213785:0;v dot_zshrc
-: 1690213785:0;git status
 : 1690213785:0;chezmoi add ~/.config
 : 1690213785:0;cd .config
 : 1690213785:0;chezmoi add ~/.config/alacritty
 : 1690213785:0;chezmoi add ~/.config/lf
 : 1690213785:0;cd chezmoi
-: 1690213785:0;ps -ef --tree
 : 1690213785:0;chezmoi add ~/.hammerspoon
 : 1690213785:0;v .gitignore
 : 1690213785:0;chezmoi add ~/.tmux.conf
@@ -1044,7 +1018,6 @@ script/setup
 : 1690213785:0;v ~/.config/alacritty/alacritty.yml
 : 1690213785:0;v $MyVIMRC
 : 1690213785:0;cd .config/nvim/lua
-: 1690213785:0;cd ..
 : 1690213785:0;v init.lua
 : 1690213785:0;chezmoi add ~/.config/nvim
 : 1690213785:0;brew install lsd
@@ -1058,49 +1031,203 @@ script/setup
 : 1690213785:0;exir
 : 1690213785:0;brew install starship\
 
-: 1690213785:0;z workspace
 : 1690213785:0;l
 : 1690213785:0;brew install eda
 : 1690213785:0;brew install exa
 : 1690213785:0;tree
 : 1690213785:0;v ~/.config/zsh/.zshrc
 : 1690213785:0;z Workspace
-: 1690213785:0;cd lcp-core-account-management-service
 : 1690213785:0;cd .config/zsh/
-: 1690213785:0;z
-: 1690213785:0;z camera-photo-reader
 : 1690213785:0;ll
 : 1690213785:0;chezmoi add ~/.config/zsh
 : 1690213785:0;bat keybinds.zsh
-: 1690213785:0;source ~/.config/zsh/.zshrc
 : 1690213785:0;tmux kill-session
-: 1690213785:0;tmux
 : 1690213785:0;conf zsh
 : 1690213785:0;source .zshrc
 : 1690213785:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 : 1690213785:0;v .zshrc
 : 1690213785:0;lf
-: 1690213785:0;~/connect-vpn.sh
 : 1690213785:0;chezmoi apply
-: 1690213785:0;lazygit
-: 1690213785:0;z zsh
 : 1690213785:0;rm dot_zshrc
 : 1690213785:0;la
 : 1690213785:0;v .chezmoiignore
 : 1690213785:0;chezmoi re-add
-: 1690213785:0;chezmoi diff
-: 1690213785:0;c
-: 1690213785:0;ls
 : 1690213785:0;v private_dot_config
-: 1690213785:0;zgenom reset
 : 1690213785:0;zgenom update
-: 1690213785:0;zgenom-reset
 : 1690213747:0;chezmoi cd
-: 1690213749:0;v
-: 1690213785:0;exit
-: 1690213796:0;source ~/.config/zsh/.zshrc
 : 1690213818:0;chezmoi diff
-: 1690213855:0;cm re-add
 : 1690214642:0;cm diff
-: 1690214665:0;lazygit
 : 1690214698:0;cm re-add
+: 1690259760:0;~/connect-vpn.sh
+: 1690289173:0;ps -ef --tree
+: 1690289180:0;ps -ef --forest
+: 1690289189:0;ps --forest
+: 1690289208:0;ps fx | perl -ne "print if /^s*$$/.."'/^\s*$$/'
+: 1690289224:0;ps | perl -ne "print if /^s*$$/.."'/^\s*$$/'
+: 1690289248:0;ps -fx
+: 1690289255:0;ps -x
+: 1690289364:0;brew install pstree
+: 1690289425:0;pstree -u
+: 1690289467:0;pstree -u user
+: 1690289475:0;pstree -u azhahes
+: 1690289638:0;pstree -s /Applications/Alacritty.app/Contents/MacOS/alacritty\
+ 
+: 1690290048:0;ps -f
+: 1690290084:0;bpytop
+: 1690290231:0;top
+: 1690290266:0;ps -e
+: 1690290296:0;brew install htop
+: 1690290565:0;tmux new -s test-session
+: 1690290589:0;htop
+: 1690295265:0;tmux -c
+: 1690295270:0;tmux -c sh
+: 1690295294:0;tmux -c bash
+: 1690295496:0;pstree -p 08808
+: 1690295558:0;man login
+: 1690295630:0;man exec
+: 1690295702:0;exec echo "test"
+: 1690295727:0;tmux ls
+: 1690295771:0;ps -afx | rg alacirtty
+: 1690295792:0;ps -afx
+: 1690295842:0;pstree | rg alacritty
+: 1690296023:0;pstree | rg alacritty | awk "{print $1}"
+: 1690296045:0;pstree | rg alacritty | awk '{print $2}'
+: 1690296085:0;seq 9
+: 1690296116:0;seq 9 | sed 'H;g'
+: 1690296146:0;curl cht.sh/awk
+: 1690296295:0;pstree | rg alacritty | awk 'NR==1{print $1}'
+: 1690296301:0;pstree | rg alacritty | awk 'NR==0{print $1}'
+: 1690296322:0;pstree | rg alacritty | awk '{print $1}'
+: 1690296335:0;pstree | rg alacritty 
+: 1690296393:0;pstree $(
+: 1690296456:0;echo "test"
+: 1690296471:0;pstree | rg alacritty | awk 'NR==1{print $2}'
+: 1690296501:0;pstree -p $(pstree | rg alacritty | awk 'NR==1{print $2}')
+: 1690296538:0;pstree | rg alacritty | awk 'NR==1{print $2}' | pstree -p
+: 1690296547:0;pstree | rg alacritty | awk 'NR==1{print $2}' | xargs pstree -p
+: 1690296645:0;ps -axwwo
+: 1690296658:0;ps -axwwo user,pid
+: 1690296767:0;pstree -f 
+: 1690296772:0;pstree -f pid
+: 1690296810:0;pstree -g 1
+: 1690296813:0;pstree -g 23
+: 1690296819:0;pstree -g 3
+: 1690296863:0;pstree -U
+: 1690296882:0;pstree --help
+: 1690296930:0;pstree -s alacritty -w
+: 1690296963:0;pstree -s alacritty -w -g
+: 1690296966:0;pstree -s alacritty -w -g 3
+: 1690296993:0;tmux
+: 1690296998:0;pstree -s alacritty -w -g 2
+: 1690297028:0;pstree -w -g 2
+: 1690297127:0;pstree -g 2
+: 1690297509:0;2
+: 1690297514:0;cd -2
+: 1690297558:0;pstree
+: 1690297577:0;pstree -s alacritty
+: 1690297582:0;pstree -s tmux
+: 1690298057:0;tty
+: 1690298092:0;echo "test" > /dev/null
+: 1690298094:0;echo "test" > /dev/tty
+: 1690298441:0;echo < /dev/tty
+: 1690298466:0;vv
+: 1690298589:0;man zle
+: 1690298594:0;zle --help
+: 1690300824:0;pty
+: 1690300997:0;man screen
+: 1690301026:0;screen
+: 1690301057:0;ps
+: 1690301625:0;clear
+: 1690301628:0;tmux -CC
+: 1690301663:0;tmux -C
+: 1690303181:0;\e[A
+: 1690303233:0;python
+: 1690303236:0;python3
+: 1690304034:0;stty -a
+: 1690304107:0;seq 52
+: 1690341536:0;dopacity
+: 1690341564:0;v main.go
+: 1690342015:0;z camera-photo-reader
+: 1690342180:0;z pictures
+: 1690342370:0;go build -o capture-otp && capture-otp
+: 1690342426:0;rm capture-otp
+: 1690342461:0;go build -o capture-otp-new && capture-otp
+: 1690342472:0;go build -o capture-otp-new && capture-otp-new
+: 1690342479:0;go build -o capture-otp-new && ./capture-otp-new
+: 1690342686:0;open captured_image.jpg
+: 1690342733:0;capture-otp
+: 1690343744:0;vpn
+: 1690343821:0;curl cht.sh/tmux
+: 1690343952:0;chtst awk | bat
+: 1690343969:0;iopacity
+: 1690343980:0;chtst tmux | bat
+: 1690344015:0;chtst tmux
+: 1690344214:0;z zsh
+: 1690344321:0;cheet
+: 1690344337:0;cheet awk
+: 1690356031:0;v test
+: 1690356069:0;rm test
+: 1690363228:0;z workspace
+: 1690363239:0;git clone https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak-sdk.git
+: 1690363281:0;cd lcp-core-keycloak-sdk
+: 1690363284:0;idea .
+: 1690367133:0;cd ..
+: 1690367149:0;cd lcp-core-account-management-service
+: 1690367192:0;git commit -m https://bitbucket.tc.lenovo.com/scm/lcp/lcp-core-keycloak-sdk.git
+: 1690367269:0;git commit -m "LCP-32072 | Azhahes | Add api in RealmPerOrgStrategy to reset keycloak settings"\
+
+: 1690384287:0;zgenom-reset
+: 1690384346:0;ex
+: 1690384760:0;man fmt
+: 1690384789:0;fold
+: 1690384802:0;man fold
+: 1690429707:0;~/connect-vpn.sh 
+: 1690429726:0;open ~/Pictures/captured_image.jpg
+: 1690439989:0;z account
+: 1690439992:0;v .talismanrc
+: 1690453135:0;#git commit -m "LCP-32072 | Azhahes | Add api in RealmPerOrgStrategy to reset keycloak settings"
+: 1690453137:0;fc
+: 1690453252:0;git commit -m "LCP-32072 | Azhahes | Revert keyclock settings and auth update when failed to delete users"
+: 1690453350:0;rm .talismanrc
+: 1690453426:0;ls
+: 1690453428:0;gst
+: 1690453437:0;git add -a
+: 1690453455:0;git commit --amend -m "LCP-32072 | Azhahes | Revert keyclock settings and auth update when failed to delete users"
+: 1690467480:0;git commit --amend -m "LCP-32072 | Azhahes | Add revert steps in all the step"
+: 1690467513:0;git add .
+: 1690467583:0;#git commit -m "LCP-32072 | Azhahes | Add revert steps in all the step"
+: 1690467586:0;lazygit
+: 1690467703:0;git commit -m "LCP-32072 | Azhahes | Add revert steps in all the step"
+: 1690467718:0;git stutus
+: 1690467727:0;git status
+: 1690469949:0;z
+: 1690470367:0;zgenom reset
+: 1690470383:0;c
+: 1690470439:0;v
+: 1690470488:0;source ~/.config/zsh/.zshrc
+: 1690470500:0;# Locate and delete the starship binary\
+sh -c 'rm "$(command -v 'starship')"'\
+
+: 1690470515:0;exit
+: 1690470592:0;oh-my-zsh
+: 1690470659:0;v
+: 1690470697:0;source ~/.config/zsh/.zshrc
+: 1690470725:0;z zsh
+: 1690470729:0;v
+: 1690470757:0;source ~/.config/zsh/.zshrc
+: 1690470782:0;set -o vi
+: 1690470802:0;c
+: 1690470845:0;zgenom reset
+: 1690470852:0;source ~/.config/zsh/.zshrc
+: 1690470859:0;c
+: 1690471127:0;ls
+: 1690471136:0;la
+: 1690471152:0;alias ls
+: 1690471160:0;la
+: 1690471177:0;z
+: 1690471195:0;mkcd temp
+: 1690471201:0;git clone git@github.com:azhahes/dotfiles-mac.git
+: 1690471237:0;cd dotfiles-mac
+: 1690471240:0;lazygit
+: 1690471288:0;v
+: 1690471359:0;cm re-add

@@ -28,20 +28,8 @@ if ! zgenom saved; then
     zgenom load zsh-users/zsh-autosuggestions
     zgenom load zsh-users/zsh-history-substring-search
     zgenom load --completion zsh-users/zsh-completions
-    # zgenom load zsh-users/vi-mode
-    zgenom load jeffreytse/zsh-vi-mode
     
     # generate the init script from plugins above
     zgenom save
 
-    # Compile your zsh files
-    zgenom compile "$HOME/.config/zsh/.zshrc"
-    # Uncomment if you set ZDOTDIR manually
-    # zgenom compile $ZDOTDIR
-
-    # You can perform other "time consuming" maintenance tasks here as well.
-    # If you use `zgenom autoupdate` you're making sure it gets
-    # executed every 7 days.
-
-    # rbenv rehash
 fi

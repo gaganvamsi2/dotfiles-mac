@@ -8,7 +8,6 @@ source ${ZDOTDIR}/keybinds.zsh # Source zsh keybinds
 source ${ZDOTDIR}/functions.zsh # Source custom functions
 source ${ZDOTDIR}/zgenom.zsh # Source zgenom for plugins
 
-eval "$(starship init zsh)"
 # ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)   # SSO cache name will vary example format "ebb09b4a7449e07674b36bd4f19f32099abfaf7b.json"
 # SSO_REGION=$(jq -r '.region' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)
 # ACCOUNTID=789985488518
@@ -21,3 +20,10 @@ if [ -z "$TMUX" ] && [ ${UID} != 0 ]
 then
     tmux new-session -A -s main
 fi
+
+set -o vi
+
+ZSH_THEME="robbyrussell"
+
+# Refrence:
+# https://gitlab.com/fazzi/dotfiles.git

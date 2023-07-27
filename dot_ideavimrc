@@ -53,6 +53,7 @@ nnoremap <leader>gl :action RecentLocations<CR>
 noremap <leader>grr :action Refactorings.QuickListPopupAction<CR>
 noremap <leader>grv :action IntroduceVariable<CR>
 noremap <leader>grf :action IntroduceField<CR>
+noremap <leader>grs :action SurroundWith<CR>
 
 nnoremap <leader>ge :action GotoNextError<CR>
 nnoremap <leader>gE :action GotoPreviousError<CR>
