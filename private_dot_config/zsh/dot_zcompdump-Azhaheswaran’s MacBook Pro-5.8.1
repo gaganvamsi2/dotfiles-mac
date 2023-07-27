@@ -1,4 +1,4 @@
-#files: 976	version: 5.8.1
+#files: 946	version: 5.8.1
 
 _comps=(
 '-' '_precommand'
@@ -91,7 +91,6 @@ _comps=(
 'Mail' '_mail'
 'Mosaic' '_webbrowser'
 'SuSEconfig' '_SUSEconfig'
-'__zoxide_z' '__zoxide_z_complete'
 'a2dismod' '_a2utils'
 'a2dissite' '_a2utils'
 'a2enmod' '_a2utils'
@@ -326,7 +325,6 @@ _comps=(
 'cygserver.exe' '_cygserver'
 'cygstart' '_cygstart'
 'cygstart.exe' '_cygstart'
-'d' '_dirs'
 'dak' '_dak'
 'darcs' '_darcs'
 'dash' '_sh'
@@ -387,7 +385,6 @@ _comps=(
 'dnf-3' '_dnf'
 'doas' '_doas'
 'docker' '_docker'
-'docker-compose' '_docker-compose'
 'dockerd' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
@@ -463,7 +460,6 @@ _comps=(
 'extractres' '_psutils'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
-'fast-theme' '_fast-theme'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
@@ -1044,7 +1040,6 @@ _comps=(
 'ogginfo' '_vorbis'
 'oksh' '_sh'
 'okular' '_okular'
-'omz' '_omz'
 'open' '_open'
 'openstack' '_openstack'
 'opera' '_webbrowser'
@@ -1297,7 +1292,6 @@ _comps=(
 'scriptreplay' '_script'
 'scselect' '_scselect'
 'scutil' '_scutil'
-'sdk' '_bash_complete -o default -F _sdk'
 'seaf-cli' '_seafile'
 'sed' '_sed'
 'senlin' '_openstack'
@@ -1675,7 +1669,6 @@ _comps=(
 'zf_rmdir' '_rmdir'
 'zfgrep' '_grep'
 'zfs' '_zfs'
-'zgenom' '_zgenom'
 'zgetattr' '_zattr'
 'zgrep' '_grep'
 'zip' '_zip'
@@ -1815,13 +1808,7 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz __zgenom __zgenom_autoupdate __zgenom_clone_dir __zgenom_err __zgenom_out \
-            __zgenom_prezto_load _zgenom __zgenom __zgenom_autoupdate __zgenom_clone_dir \
-            __zgenom_err __zgenom_out __zgenom_prezto_load _zgenom __zgenom \
-            __zgenom_autoupdate __zgenom_clone_dir __zgenom_err __zgenom_out __zgenom_prezto_load \
-            _zgenom _fast-theme _docker-compose __zgenom __zgenom_autoupdate \
-            __zgenom_clone_dir __zgenom_err __zgenom_out __zgenom_prezto_load _zgenom \
-            _bat _brew _cargo _chezmoi _colima \
+autoload -Uz _bat _brew _cargo _chezmoi _colima \
             _docker _exa _fd _img2sixel _lf \
             _limactl _lsd _rg _starship _yq \
             _zoxide _SUSEconfig _a2ps _a2utils _aap \
@@ -2015,5 +2002,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: 7d5e12500a2ba0b575ffafcbb516568973528730
-#omz fpath: /Users/azhahes/.config/zsh/ohmyzsh/functions /Users/azhahes/.config/zsh/ohmyzsh/completions /Users/azhahes/.config/zsh/ohmyzsh/cache/completions /Users/azhahes/.zgenom/sources/ohmyzsh/ohmyzsh/___ /Users/azhahes/.zgenom/functions /Users/azhahes/.zgenom/functions /Users/azhahes/.zgenom/functions /Users/azhahes/.config/zsh/ohmyzsh/functions /Users/azhahes/.config/zsh/ohmyzsh/completions /Users/azhahes/.config/zsh/ohmyzsh/cache/completions /Users/azhahes/.zgenom/sources/zsh-users/zsh-completions/___ /Users/azhahes/.zgenom/sources/zsh-users/zsh-history-substring-search/___ /Users/azhahes/.zgenom/sources/zsh-users/zsh-autosuggestions/___ /Users/azhahes/.zgenom/sources/zdharma-continuum/fast-syntax-highlighting/___ /Users/azhahes/.zgenom/sources/joshskidmore/zsh-fzf-history-search/___ /Users/azhahes/.zgenom/sources/Aloxaf/fzf-tab/___ /Users/azhahes/.zgenom/sources/ohmyzsh/ohmyzsh/___/plugins/docker-compose /Users/azhahes/.zgenom/sources/ohmyzsh/ohmyzsh/___/plugins/sudo /Users/azhahes/.zgenom/sources/ohmyzsh/ohmyzsh/___ /Users/azhahes/.zgenom/functions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.8.1/functions /Users/azhahes/.zgenom/sources/Aloxaf/fzf-tab/___/lib
+#omz revision: 4188b22aea3356a02768505103e42a96d18547a3
+#omz fpath: /Users/azhahes/.config/zsh/ohmyzsh/plugins/git /Users/azhahes/.config/zsh/ohmyzsh/functions /Users/azhahes/.config/zsh/ohmyzsh/completions /Users/azhahes/.config/zsh/ohmyzsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.8.1/functions

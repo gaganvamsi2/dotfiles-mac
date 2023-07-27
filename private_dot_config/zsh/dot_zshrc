@@ -3,10 +3,10 @@
 # Source ZSH configs
 source ${ZDOTDIR}/options.zsh # Source zsh options
 source ${ZDOTDIR}/compinit.zsh # Source completion conf
-source ${ZDOTDIR}/aliases.zsh # Source zsh aliases
 source ${ZDOTDIR}/keybinds.zsh # Source zsh keybinds
 source ${ZDOTDIR}/functions.zsh # Source custom functions
 source ${ZDOTDIR}/zgenom.zsh # Source zgenom for plugins
+source ${ZDOTDIR}/aliases.zsh # Source zsh aliases
 
 # ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)   # SSO cache name will vary example format "ebb09b4a7449e07674b36bd4f19f32099abfaf7b.json"
 # SSO_REGION=$(jq -r '.region' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)

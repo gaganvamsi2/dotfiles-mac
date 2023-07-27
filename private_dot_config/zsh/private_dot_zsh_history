@@ -1231,3 +1231,33 @@ sh -c 'rm "$(command -v 'starship')"'\
 : 1690471240:0;lazygit
 : 1690471288:0;v
 : 1690471359:0;cm re-add
+: 1690471365:0;g
+: 1690471367:0;v
+: 1690471396:0;zgenom reset
+: 1690471399:0;source ~/.config/zsh/.zshrc
+: 1690471405:0;oh-my-zsh
+: 1690471413:0;v
+: 1690471473:0;z
+: 1690471477:0;oh-my-zsh
+: 1690471485:0;./.oh-my-zsh
+: 1690471489:0;ls
+: 1690471518:0;./oh-my-zsh.sh
+: 1690471527:0;chmod u+x oh-my-zsh.sh
+: 1690471537:0;./oh-my-zsh.sh
+: 1690471547:0;v
+: 1690471583:0;c
+: 1690471584:0;source ~/.config/zsh/.zshrc
+: 1690471814:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1690471898:0;rm -r /Users/azhahes/.confi/zsh/ohmyzsh
+: 1690471921:0;rm -r /Users/azhahes/.config/zsh/ohmyzsh
+: 1690471938:0;c
+: 1690471943:0;source ~/.config/zsh/.zshrc
+: 1690471962:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1690471981:0;v
+: 1690471985:0;nvim
+: 1690472011:0;z zsh
+: 1690472016:0;z
+: 1690472021:0;cd
+: 1690472033:0;cd .config/zsh
+: 1690472035:0;nvim
+: 1690472184:0;chezmoi re-add
