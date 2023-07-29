@@ -1,3 +1,6 @@
 Readme.md
-.git
-dot_git
+git/
+ohmyzsh/
+*/*.zcompdump
+*/*.zsh_history
+

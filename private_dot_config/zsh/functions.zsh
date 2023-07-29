@@ -17,19 +17,6 @@ cheet() {
   curl cht.sh/$1 | bat
 }
 
-# tells zsh to ignore case when completing commands or filenames.
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-eval "$(zoxide init zsh)"
-
-LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
-if [ -f "$LFCD" ]; then
-    source "$LFCD"
-fi
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.

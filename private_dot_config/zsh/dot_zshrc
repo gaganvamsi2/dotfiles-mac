@@ -1,12 +1,34 @@
 #!/usr/bin/env zsh
+#
 
-# Source ZSH configs
-source ${ZDOTDIR}/options.zsh # Source zsh options
-source ${ZDOTDIR}/compinit.zsh # Source completion conf
-source ${ZDOTDIR}/keybinds.zsh # Source zsh keybinds
-source ${ZDOTDIR}/functions.zsh # Source custom functions
-source ${ZDOTDIR}/zgenom.zsh # Source zgenom for plugins
-source ${ZDOTDIR}/aliases.zsh # Source zsh aliases
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/azhahes/.oh-my-zsh"
+
+
+if [[ $__INTELLIJ_COMMAND_HISTFILE__ ]]; then
+  ZSH_THEME="agnoster"
+else
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+fi
+
+plugins=(git-prompt git zsh-autosuggestions zsh-syntax-highlighting fzf zsh-interactive-cd vi-mode)
+
+source "$ZSH/oh-my-zsh.sh"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+source "$ZDOTDIR/aliases.zsh"
+source "$ZDOTDIR/options.zsh"
+source "$ZDOTDIR/functions.zsh"
+
+eval "$(zoxide init zsh)"
 
 # ACCESS_TOKEN=$(jq -r '.accessToken' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)   # SSO cache name will vary example format "ebb09b4a7449e07674b36bd4f19f32099abfaf7b.json"
 # SSO_REGION=$(jq -r '.region' ~/.aws/sso/cache/5d17123b0d39c33a5eecadbc9e4081cf13b91fa8.json)
@@ -21,9 +43,6 @@ then
     tmux new-session -A -s main
 fi
 
-set -o vi
 
-ZSH_THEME="robbyrussell"
-
-# Refrence:
-# https://gitlab.com/fazzi/dotfiles.git
+# # Refrence:
+# # https://gitlab.com/fazzi/dotfiles.git

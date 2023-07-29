@@ -24,3 +24,19 @@ setopt autocd
 # Disable all beeps in zsh
 unsetopt BEEP
 
+# vi mode settings
+VI_MODE_SET_CURSOR=true
+MODE_INDICATOR="%F{white}+%f"
+INSERT_MODE_INDICATOR="%F{yellow}+%f"
+
+PROMPT="$PROMPT\$(vi_mode_prompt_info)"
+RPROMPT="\$(vi_mode_prompt_info)$RPROMPT"
+
+DEFAULT_USER=$(whoami)
+
+zstyle ':autocomplete:*' fzf-completion yes
+
+LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi

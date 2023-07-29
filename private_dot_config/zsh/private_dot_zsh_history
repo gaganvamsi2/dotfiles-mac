@@ -336,7 +336,6 @@ cp -f mv-p /usr/local/bin/\
 : 1690213785:0;brew install bytop
 : 1690213785:0;brew install bpytop
 : 1690213785:0;/Applications/Maccy.app/Contents/MacOS/Maccy
-: 1690213785:0;cd
 : 1690213785:0;cd -
 : 1690213785:0;cd Maccy.app
 : 1690213785:0;alias
@@ -639,7 +638,6 @@ cd documents
 : 1690213785:0;mdls sunset-illustration.jpg
 : 1690213785:0;man readline
 : 1690213785:0;set -o emacs
-: 1690213785:0;set -o vi
 : 1690213785:0;celar
 : 1690213785:0;fd tes
 : 1690213785:0;#kill -9 4982 
@@ -721,7 +719,6 @@ touch .hushlogin
 : 1690213785:0;ls -a
 : 1690213785:0;echo "http:\\google.com"
 : 1690213785:0;v tesyt
-: 1690213785:0;nvim
 : 1690213785:0;clar
 : 1690213785:0;grep som
 : 1690213785:0;grep val
@@ -1027,7 +1024,6 @@ script/setup
 : 1690213785:0;source ~/.zshrc
 : 1690213785:0;v .zshenv
 : 1690213785:0;z downloads
-: 1690213785:0;oh-my-zsh
 : 1690213785:0;exir
 : 1690213785:0;brew install starship\
 
@@ -1044,20 +1040,16 @@ script/setup
 : 1690213785:0;tmux kill-session
 : 1690213785:0;conf zsh
 : 1690213785:0;source .zshrc
-: 1690213785:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 : 1690213785:0;v .zshrc
 : 1690213785:0;lf
 : 1690213785:0;chezmoi apply
 : 1690213785:0;rm dot_zshrc
-: 1690213785:0;la
 : 1690213785:0;v .chezmoiignore
-: 1690213785:0;chezmoi re-add
 : 1690213785:0;v private_dot_config
 : 1690213785:0;zgenom update
 : 1690213747:0;chezmoi cd
 : 1690213818:0;chezmoi diff
 : 1690214642:0;cm diff
-: 1690214698:0;cm re-add
 : 1690259760:0;~/connect-vpn.sh
 : 1690289173:0;ps -ef --tree
 : 1690289180:0;ps -ef --forest
@@ -1162,7 +1154,6 @@ script/setup
 : 1690343969:0;iopacity
 : 1690343980:0;chtst tmux | bat
 : 1690344015:0;chtst tmux
-: 1690344214:0;z zsh
 : 1690344321:0;cheet
 : 1690344337:0;cheet awk
 : 1690356031:0;v test
@@ -1189,75 +1180,54 @@ script/setup
 : 1690453137:0;fc
 : 1690453252:0;git commit -m "LCP-32072 | Azhahes | Revert keyclock settings and auth update when failed to delete users"
 : 1690453350:0;rm .talismanrc
-: 1690453426:0;ls
 : 1690453428:0;gst
 : 1690453437:0;git add -a
 : 1690453455:0;git commit --amend -m "LCP-32072 | Azhahes | Revert keyclock settings and auth update when failed to delete users"
 : 1690467480:0;git commit --amend -m "LCP-32072 | Azhahes | Add revert steps in all the step"
 : 1690467513:0;git add .
 : 1690467583:0;#git commit -m "LCP-32072 | Azhahes | Add revert steps in all the step"
-: 1690467586:0;lazygit
 : 1690467703:0;git commit -m "LCP-32072 | Azhahes | Add revert steps in all the step"
 : 1690467718:0;git stutus
 : 1690467727:0;git status
-: 1690469949:0;z
-: 1690470367:0;zgenom reset
-: 1690470383:0;c
-: 1690470439:0;v
-: 1690470488:0;source ~/.config/zsh/.zshrc
 : 1690470500:0;# Locate and delete the starship binary\
 sh -c 'rm "$(command -v 'starship')"'\
 
-: 1690470515:0;exit
-: 1690470592:0;oh-my-zsh
-: 1690470659:0;v
-: 1690470697:0;source ~/.config/zsh/.zshrc
-: 1690470725:0;z zsh
-: 1690470729:0;v
-: 1690470757:0;source ~/.config/zsh/.zshrc
 : 1690470782:0;set -o vi
-: 1690470802:0;c
-: 1690470845:0;zgenom reset
-: 1690470852:0;source ~/.config/zsh/.zshrc
-: 1690470859:0;c
-: 1690471127:0;ls
-: 1690471136:0;la
 : 1690471152:0;alias ls
 : 1690471160:0;la
-: 1690471177:0;z
 : 1690471195:0;mkcd temp
 : 1690471201:0;git clone git@github.com:azhahes/dotfiles-mac.git
 : 1690471237:0;cd dotfiles-mac
 : 1690471240:0;lazygit
-: 1690471288:0;v
 : 1690471359:0;cm re-add
 : 1690471365:0;g
-: 1690471367:0;v
 : 1690471396:0;zgenom reset
-: 1690471399:0;source ~/.config/zsh/.zshrc
-: 1690471405:0;oh-my-zsh
-: 1690471413:0;v
-: 1690471473:0;z
 : 1690471477:0;oh-my-zsh
 : 1690471485:0;./.oh-my-zsh
 : 1690471489:0;ls
-: 1690471518:0;./oh-my-zsh.sh
 : 1690471527:0;chmod u+x oh-my-zsh.sh
 : 1690471537:0;./oh-my-zsh.sh
-: 1690471547:0;v
-: 1690471583:0;c
-: 1690471584:0;source ~/.config/zsh/.zshrc
-: 1690471814:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 : 1690471898:0;rm -r /Users/azhahes/.confi/zsh/ohmyzsh
 : 1690471921:0;rm -r /Users/azhahes/.config/zsh/ohmyzsh
 : 1690471938:0;c
-: 1690471943:0;source ~/.config/zsh/.zshrc
 : 1690471962:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 : 1690471981:0;v
-: 1690471985:0;nvim
 : 1690472011:0;z zsh
 : 1690472016:0;z
 : 1690472021:0;cd
 : 1690472033:0;cd .config/zsh
 : 1690472035:0;nvim
 : 1690472184:0;chezmoi re-add
+: 1690605292:0;source ~/.config/zsh/.zshrc
+: 1690605300:0;exirt
+: 1690605302:0;exit
+: 1690605312:0;v
+: 1690605580:0;cm ignored
+: 1690605716:0;v .chezmoiignore
+: 1690605720:0;v
+: 1690605854:0;z zsh
+: 1690605857:0;ls
+: 1690605858:0;ll
+: 1690605864:0;v
+: 1690605885:0;cm ignored
+: 1690605894:0;cm re-add
