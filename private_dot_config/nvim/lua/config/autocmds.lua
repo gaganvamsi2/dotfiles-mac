@@ -15,4 +15,4 @@
 vim.api.nvim_command("autocmd BufWinEnter * normal! zR")
 vim.api.nvim_command("autocmd BufReadPost * normal! zR")
 
-vim.api.nvim_command('autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"')
+vim.api.nvim_command("autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply")

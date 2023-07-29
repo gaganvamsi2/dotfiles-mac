@@ -18,7 +18,7 @@ else
   ZSH_THEME="powerlevel10k/powerlevel10k"
 fi
 
-plugins=(git-prompt git zsh-autosuggestions zsh-syntax-highlighting fzf zsh-interactive-cd vi-mode)
+plugins=(vi-mode zsh-autosuggestions zsh-syntax-highlighting fzf zsh-interactive-cd)
 
 source "$ZSH/oh-my-zsh.sh"
 

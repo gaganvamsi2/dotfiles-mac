@@ -1231,3 +1231,5 @@ sh -c 'rm "$(command -v 'starship')"'\
 : 1690605864:0;v
 : 1690605885:0;cm ignored
 : 1690605894:0;cm re-add
+: 1690605894:0;cm is ignored
+
