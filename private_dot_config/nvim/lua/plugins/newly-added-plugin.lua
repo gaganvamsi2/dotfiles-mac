@@ -29,4 +29,13 @@ return {
     ft = { "go", "gomod" },
     build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   },
+  {
+    "ziontee113/icon-picker.nvim",
+    dependencies = { "stevearc/dressing.nvim" },
+    config = function()
+      require("icon-picker").setup({
+        disable_legacy_commands = true,
+      })
+    end,
+  },
 }

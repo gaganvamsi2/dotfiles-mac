@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 #
+if [ -z "$TMUX" ] && [ ${UID} != 0 ]
+then
+    tmux new-session -A -s main
+fi
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -10,13 +14,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/azhahes/.oh-my-zsh"
-
-
-if [[ $__INTELLIJ_COMMAND_HISTFILE__ ]]; then
-  ZSH_THEME="agnoster"
-else
-  ZSH_THEME="powerlevel10k/powerlevel10k"
-fi
 
 plugins=(vi-mode zsh-autosuggestions zsh-syntax-highlighting fzf zsh-interactive-cd)
 
@@ -29,12 +26,6 @@ source "$ZDOTDIR/options.zsh"
 source "$ZDOTDIR/functions.zsh"
 
 eval "$(zoxide init zsh)"
-
-if [ -z "$TMUX" ] && [ ${UID} != 0 ]
-then
-    tmux new-session -A -s main
-fi
-
 
 # # Refrence:
 # # https://gitlab.com/fazzi/dotfiles.git

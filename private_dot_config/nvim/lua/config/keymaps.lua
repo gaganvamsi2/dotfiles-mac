@@ -72,3 +72,11 @@ map("n", "<leader>w|", "<Nop>", { desc = "Split window right", remap = true })
 
 -- save file
 map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Save file" })
+
+--center after scroll
+map("n", "<C-d>", "<C-d>zz", { desc = "Scroll down" })
+map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
+
+--Go back and forward
+map("n", "gb", "<C-o>", { desc = "go back" })
+map("n", "gp", "<C-i>", { desc = "go forward" })
