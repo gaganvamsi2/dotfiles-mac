@@ -3,8 +3,8 @@ window:
   opacity: 0.9
   startup_mode: SimpleFullscreen
   padding:
-    x: 4
-    y: 1
+    x: 8
+    y: 8
   option_as_alt: Both
 font:
   normal:

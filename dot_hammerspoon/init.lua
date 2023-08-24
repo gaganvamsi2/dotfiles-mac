@@ -1,18 +1,23 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
-hs.hotkey.bind({ "cmd" }, "h", function()
-	hs.eventtap.keyStroke({}, "left")
-end)
-hs.hotkey.bind({ "cmd" }, "j", function()
-	hs.eventtap.keyStroke({}, "down")
-end)
-hs.hotkey.bind({ "cmd" }, "k", function()
-	hs.eventtap.keyStroke({}, "up")
-end)
-hs.hotkey.bind({ "cmd" }, "l", function()
-	hs.eventtap.keyStroke({}, "right")
-end)
+function MoveLeft()
+	hs.eventtap.keyStroke({}, "left", 50000)
+end
+function MoveRight()
+	hs.eventtap.keyStroke({}, "right", 50000)
+end
+function MoveDown()
+	hs.eventtap.keyStroke({}, "down", 50000)
+end
+function MoveUp()
+	hs.eventtap.keyStroke({}, "up", 50000)
+end
+
+hs.hotkey.bind({ "cmd" }, "h", nil, MoveLeft, MoveLeft)
+hs.hotkey.bind({ "cmd" }, "j", nil, MoveDown, MoveDown)
+hs.hotkey.bind({ "cmd" }, "k", nil, MoveUp, MoveUp)
+hs.hotkey.bind({ "cmd" }, "l", nil, MoveRight, MoveRight)
 
 muteMenuBar = hs.menubar.new()
 
@@ -133,4 +138,4 @@ vim:enterWithSequence("jk")
 -- end)
 --
 -----------------------------------------------------
-hs.loadSpoon('ControlEscape'):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon
+hs.loadSpoon("ControlEscape"):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon

@@ -1,22 +1,12 @@
 #!/usr/bin/env zsh
 
-conf() {
-  case $1 in
-    zsh)      $EDITOR "$XDG_CONFIG_HOME/zsh/.zshrc" ;;
-    zprofile) $EDITOR "$XDG_CONFIG_HOME/zsh/.zprofile" ;;
-    zaliases)  $EDITOR "$XDG_CONFIG_HOME/zsh/aliases.zsh" ;;
-    zbinds)  $EDITOR "$XDG_CONFIG_HOME/zsh/keybinds.zsh" ;;
-    zopt)  $EDITOR "$XDG_CONFIG_HOME/zsh/options.zsh" ;;
-    zgenom)  $EDITOR "$XDG_CONFIG_HOME/zsh/zgenom.zsh" ;;
-    zcomp)  $EDITOR "$XDG_CONFIG_HOME/zsh/compinit.zsh" ;;
-    zfunc)  $EDITOR "$XDG_CONFIG_HOME/zsh/functions.zsh" ;;
-  esac
-}
-
 cheet() {
   curl cht.sh/$1 | bat
 }
 
+obsidian-cleanup() {
+ fd -e txt . '/Users/azhahes/Library/Mobile Documents/iCloud~md~obsidian/Documents/knowledge-vault' -x sh -c 'mv "$0" "${0%.md.txt}.md"' {}
+}
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.

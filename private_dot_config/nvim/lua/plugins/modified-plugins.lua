@@ -55,22 +55,22 @@ return {
       },
     },
   },
-  {
-    "catppuccin/nvim",
-    opts = {
-      transparent_background = true,
-      flavour = "latte", -- latte, frappe, macchiato, mocha
-      background = { -- :h background
-        light = "latte",
-        dark = "mocha",
-      },
-      dim_inactive = {
-        enabled = true, -- dims the background color of inactive window
-        shade = "dark",
-        percentage = 0.15, -- percentage of the shade to apply to the inactive window
-      },
-    },
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   opts = {
+  --     transparent_background = true,
+  --     flavour = "latte", -- latte, frappe, macchiato, mocha
+  --     background = { -- :h background
+  --       light = "latte",
+  --       dark = "mocha",
+  --     },
+  --     dim_inactive = {
+  --       enabled = true, -- dims the background color of inactive window
+  --       shade = "dark",
+  --       percentage = 0.15, -- percentage of the shade to apply to the inactive window
+  --     },
+  --   },
+  -- },
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -197,7 +197,6 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = { "hrsh7th/cmp-emoji" },
-    ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
