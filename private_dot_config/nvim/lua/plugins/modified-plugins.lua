@@ -79,6 +79,7 @@ return {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
+    enabled = false,
     opts = function(_, opts)
       if type(opts.sources) == "table" then
         local nls = require("null-ls")
@@ -199,7 +200,25 @@ return {
     dependencies = { "hrsh7th/cmp-emoji" },
     opts = function(_, opts)
       local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
+      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" }, { name = "nvim_lua" } }))
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function()
+      return {
+        sections = {
+          lualine_y = {
+            {
+              function()
+                return vim.fn["codeium#GetStatusString"]()
+              end,
+            },
+            { "progress", separator = " ", padding = { left = 1, right = 0 } },
+            { "location", padding = { left = 0, right = 1 } },
+          },
+        },
+      }
     end,
   },
 }
