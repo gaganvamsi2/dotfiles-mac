@@ -38,9 +38,10 @@ nnoremap cam j:action MethodUp<cr>0v]M"_c
 nnoremap cim j:action MethodUp<cr>]m<cr>v]M<bs>"_c
 
 nnoremap <leader>w :wall<CR>
+
 " paste withoug affecting clipboard
-vnoremap p "_dhp
-vnoremap P "_dhP
+" vnoremap p "_dhp
+" vnoremap P "_dhP
 
 " Quicklytest insert an empty new line without entering insert mode
 nnoremap ,o o<Esc>

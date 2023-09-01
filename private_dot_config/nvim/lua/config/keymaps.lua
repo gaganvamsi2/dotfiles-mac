@@ -42,8 +42,8 @@ map("n", "<leader>h", "^", { desc = "go to beggining of the line" })
 map("v", "<leader>h", "^", { desc = "go to beggining of the line" })
 
 --use <space>l to go end of line
-map("n", "<leader>l", "$", { desc = "go  to end of the line" })
-map("v", "<leader>l", "$", { desc = "go  to end of the line" })
+map("n", "<leader>l", "g_", { desc = "go  to end of the line" })
+map("v", "<leader>l", "g_", { desc = "go  to end of the line" })
 
 -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
 -- map("n", "zR", require("ufo").openAllFolds, { desc = "open all folds (ufo)" })
@@ -80,3 +80,8 @@ map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
 --Go back and forward
 map("n", "gb", "<C-o>", { desc = "go back" })
 map("n", "gp", "<C-i>", { desc = "go forward" })
+
+-- source current file
+map("n", "gp", "<C-i>", { desc = "go forward" })
+
+map({ "n", "v" }, ",s", "<Cmd>source %<CR>", { desc = "source current file" })

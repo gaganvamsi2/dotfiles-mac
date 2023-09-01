@@ -8,6 +8,11 @@ obsidian-cleanup() {
  fd -e txt . '/Users/azhahes/Library/Mobile Documents/iCloud~md~obsidian/Documents/knowledge-vault' -x sh -c 'mv "$0" "${0%.md.txt}.md"' {}
 }
 
+aws-sso-login(){
+  aws sso login --profile $1
+  eval $(aws configure export-credentials --profile $1 --format env)
+}
+
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
