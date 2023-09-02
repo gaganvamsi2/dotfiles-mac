@@ -8,6 +8,10 @@ obsidian-cleanup() {
  fd -e txt . '/Users/azhahes/Library/Mobile Documents/iCloud~md~obsidian/Documents/knowledge-vault' -x sh -c 'mv "$0" "${0%.md.txt}.md"' {}
 }
 
+copy-tmux-window-address() {
+  tmux display-message -p '#{session_name}:#{window_index}.#{pane_index}' | awk '{print $1}' | clipcopy
+}
+
 aws-sso-login(){
   aws sso login --profile $1
   eval $(aws configure export-credentials --profile $1 --format env)

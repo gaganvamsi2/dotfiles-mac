@@ -84,4 +84,8 @@ map("n", "gp", "<C-i>", { desc = "go forward" })
 -- source current file
 map("n", "gp", "<C-i>", { desc = "go forward" })
 
-map({ "n", "v" }, ",s", "<Cmd>source %<CR>", { desc = "source current file" })
+map({ "n", "v" }, "<leader>S", "<Cmd>source % | ls<CR>", { desc = "source current file" })
+
+--custom command
+require("config.custom-commands").addVimUserCommand()
+map({ 'n', 'v' }, '<leader>a', "<Cmd>SendToTmuxPane<CR>", { desc = "send to tmux pane" })

@@ -221,4 +221,16 @@ return {
       }
     end,
   },
+  {
+    "folke/noice.nvim",
+    opts =
+    {
+      routes = {
+        {
+          view = "split",
+          filter = { event = "msg_show", min_width = 20 },
+        },
+      },
+    }
+  }
 }
