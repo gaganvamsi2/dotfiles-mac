@@ -88,4 +88,5 @@ map({ "n", "v" }, "<leader>S", "<Cmd>source % | ls<CR>", { desc = "source curren
 
 --custom command
 require("config.custom-commands").addVimUserCommand()
-map({ 'n', 'v' }, '<leader>a', "<Cmd>SendToTmuxPane<CR>", { desc = "send to tmux pane" })
+map({ 'n', 'v' }, '<leader>a', "<Cmd>SendToTmuxPane default<CR>", { desc = "send to bottom tmux pane" })
+map({ 'n', 'v' }, '<leader>A', "<Cmd>SendToTmuxPane<CR>", { desc = "send to selected tmux pane" })

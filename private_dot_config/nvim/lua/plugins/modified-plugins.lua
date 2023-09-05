@@ -41,6 +41,10 @@ return {
       window = {
         mappings = {
           ["<space>"] = "none",
+          ['s'] = "none",
+          ['<c-s>'] = "open_vsplit",
+          ['f'] = "none",
+          ['<c-f>'] = "filter_on_submit",
         },
       },
     },
@@ -225,12 +229,12 @@ return {
     "folke/noice.nvim",
     opts =
     {
-      routes = {
-        {
-          view = "split",
-          filter = { event = "msg_show", min_width = 20 },
-        },
-      },
+      -- routes = {
+      --   {
+      --     view = "split",
+      --     filter = { event = "msg_show", min_width = 20 },
+      --   },
+      -- },
     }
   }
 }

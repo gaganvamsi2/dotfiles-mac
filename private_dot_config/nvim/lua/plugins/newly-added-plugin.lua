@@ -50,4 +50,8 @@ return {
       end, { expr = true })
     end,
   },
+  {
+    "ThePrimeagen/harpoon",
+    event = "VeryLazy",
+  },
 }

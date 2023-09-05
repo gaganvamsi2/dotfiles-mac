@@ -38,27 +38,63 @@ local function region_get_text(region, mode)
   if mode == 'line' then return get_lines(from.line - 1, to.line) end
 end
 
+tmuxPaneIdentifiers = {
+  ["{last}            !    The last (previously active) pane"] = "{last}",
+  ["{next}            +    The next pane by number"] = "{next}",
+  ["{previous}        -    The previous pane by number"] = "{previous}",
+  ["{top}                  The top pane"] = "{top}",
+  ["{bottom}               The bottom pane"] = "{bottom}",
+  ["{left}                 The leftmost pane"] = "{left}",
+  ["{right}                The rightmost pane"] = "{right}",
+  ["{top-left}             The top-left pane"] = "{top-left}",
+  ["{top-right}            The top-right pane"] = "{top-right}",
+  ["{bottom-left}          The bottom-left pane"] = "{bottom-left}",
+  ["{bottom-right}         The bottom-right pane"] = "{bottom-right}",
+  ["{up-of}                The pane above the active pane"] = "{up-of}",
+  ["{down-of}              The pane below the active pane"] = "{down-of}",
+  ["{left-of}              The pane to the left of the active pane"] = "{left-of}",
+  ["{right-of}             The pane to the right of the active pane"] = "{right-of}"
+}
+
 function M.addVimUserCommand()
-  vim.api.nvim_create_user_command('SendToTmuxPane', function()
+  vim.api.nvim_create_user_command('SendToTmuxPane', function(opts)
     local mode = 'line'
     local region = {}
+    vim.print(opts)
+    local default = opts.args == 'default'
     if not is_visual_mode() then
       local currentLine = vim.api.nvim_win_get_cursor(0)[1]
       region = { from = { line = currentLine, col = 1 }, to = { line = currentLine, col = 1 } }
     else
       region = get_current_region()
     end
-    local register = vim.fn.getreg('m')
-    local text = region_get_text(region, mode)
-    vim.print(text)
-    text = table.concat(text, '\n')
-    vim.print(text)
-    -- trim white space in register
-    register = register:gsub('^%s*(.-)%s*$', '%1')
-    local cmd = string.format([[! tmux send-keys -t %s '%s' Enter]], register, text)
-    local parsedCmd = vim.api.nvim_parse_cmd(cmd, {})
-    vim.api.nvim_cmd(parsedCmd, {})
-  end, {})
+    -- local register = vim.fn.getreg('m')
+    local listOfLines = region_get_text(region, mode)
+    local text = table.concat(listOfLines, '\n')
+    text = text:gsub(';', '\\;'):gsub("'", "'\\''")
+    local keyset = {}
+    local n = 0
+    local selectedTmuxPaneId = '{down-of}'
+    for k, _ in pairs(tmuxPaneIdentifiers) do
+      n = n + 1
+      keyset[n] = k
+    end
+    if default then
+      sendOsCommand(selectedTmuxPaneId, text)
+    else
+      vim.ui.select(keyset, { prompt = 'Select tmux pane: ' },
+        function(selected)
+          selectedTmuxPaneId = tmuxPaneIdentifiers[selected]
+          sendOsCommand(selectedTmuxPaneId, text)
+        end)
+    end
+  end, { nargs = '*' })
+end
+
+function sendOsCommand(selectedTmuxPaneId, text)
+  local cmd = string.format([[! tmux send-keys -t %s '%s' Enter]], selectedTmuxPaneId, text)
+  local parsedCmd = vim.api.nvim_parse_cmd(cmd, {})
+  vim.api.nvim_cmd(parsedCmd, {})
 end
 
 -- Export the module

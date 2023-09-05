@@ -92,7 +92,7 @@ set incsearch
 nnoremap <leader>ff :action GotoFile<CR>
 nnoremap <leader>fs :action GotoSymbol<CR>
 nnoremap <leader>fg :action FindInPath<CR>
-nnoremap <leader>fb :action Switcher<CR>
+nnoremap <leader>, :action Switcher<CR>
 nnoremap <leader>fl :action RecentLocations<CR>
 nnoremap gs :action FileStructurePopup<CR>
 nnoremap gi :action GotoImplementation<CR>
