@@ -38,7 +38,7 @@ local function region_get_text(region, mode)
   if mode == 'line' then return get_lines(from.line - 1, to.line) end
 end
 
-tmuxPaneIdentifiers = {
+TmuxPaneIdentifiers = {
   ["{last}            !    The last (previously active) pane"] = "{last}",
   ["{next}            +    The next pane by number"] = "{next}",
   ["{previous}        -    The previous pane by number"] = "{previous}",
@@ -75,7 +75,7 @@ function M.addVimUserCommand()
     local keyset = {}
     local n = 0
     local selectedTmuxPaneId = '{down-of}'
-    for k, _ in pairs(tmuxPaneIdentifiers) do
+    for k, _ in pairs(TmuxPaneIdentifiers) do
       n = n + 1
       keyset[n] = k
     end
@@ -84,7 +84,7 @@ function M.addVimUserCommand()
     else
       vim.ui.select(keyset, { prompt = 'Select tmux pane: ' },
         function(selected)
-          selectedTmuxPaneId = tmuxPaneIdentifiers[selected]
+          selectedTmuxPaneId = TmuxPaneIdentifiers[selected]
           sendOsCommand(selectedTmuxPaneId, text)
         end)
     end
