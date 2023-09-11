@@ -212,6 +212,9 @@ return {
     opts = function()
       return {
         sections = {
+          lualine_c = {
+            { require('NeoComposer.ui').status_recording },
+          },
           lualine_y = {
             {
               function()

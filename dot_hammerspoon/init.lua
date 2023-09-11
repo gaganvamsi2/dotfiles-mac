@@ -159,13 +159,66 @@ end
 
 hs.hotkey.bind({ "cmd", "ctrl", "alt" }, "b", addSpace)
 
--- k = hs.hotkey.modal.new('ctrl', 'space')
---
--- print(hs.inspect.inspect(k))
---
--- function k:entered() hs.alert 'Entered mode' end
---
--- function k:exited() hs.alert 'Exited mode' end
---
--- k:bind('', 'escape', function() k:exit() end)
--- k:bind('', 'J', 'Pressed J', function() print 'let the record show that J was pressed' end)
+k = hs.hotkey.modal.new('shift', 'space')
+
+LayerMenuBar = hs.menubar.new()
+
+local function writeToFile(file_path, content)
+  local file = io.open(file_path, "w")
+  if file then
+    file:write(content)
+    file:close()
+  else
+    print("Error: Unable to open the file for writing.")
+  end
+end
+
+function k:entered()
+  LayerMenuBar:setTitle("Layer 1")
+  writeToFile("/Users/azhahes/keymap-layer.txt", "#[fg=color161] layer 1 🔼")
+end
+
+function k:exited()
+  LayerMenuBar:setTitle("Layer 0")
+  writeToFile("/Users/azhahes/keymap-layer.txt", "#[fg=color8] layer 0 ↔️")
+end
+
+k:bind('', 'escape', function() k:exit() end)
+
+
+k:bind('', 'a', function() hs.eventtap.keyStroke({}, "1") end)
+k:bind('', 's', function() hs.eventtap.keyStroke({}, "2") end)
+k:bind('', 'd', function() hs.eventtap.keyStroke({}, "3") end)
+k:bind('', 'f', function() hs.eventtap.keyStroke({}, "4") end)
+k:bind('', 'g', function() hs.eventtap.keyStroke({}, "5") end)
+k:bind('', 'h', function() hs.eventtap.keyStroke({}, "6") end)
+k:bind('', 'j', function() hs.eventtap.keyStroke({}, "7") end)
+k:bind('', 'k', function() hs.eventtap.keyStroke({}, "8") end)
+k:bind('', 'l', function() hs.eventtap.keyStroke({}, "9") end)
+k:bind('', ';', function() hs.eventtap.keyStroke({}, "0") end)
+
+k:bind('', 'e', function() hs.eventtap.keyStroke({ "shift" }, "1") end)       -- !
+k:bind('shift', 'a', function() hs.eventtap.keyStroke({ "shift" }, "2") end)  -- @
+k:bind('shift', 'h', function() hs.eventtap.keyStroke({ "shift" }, "3") end)  -- #
+k:bind('shift', 'd', function() hs.eventtap.keyStroke({ "shift" }, "4") end)  -- $
+k:bind('shift', 'g', function() hs.eventtap.keyStroke({ "shift" }, "5") end)  -- %
+k:bind('shift', 'v', function() hs.eventtap.keyStroke({ "shift" }, "6") end)  -- v
+k:bind('shift', 'f', function() hs.eventtap.keyStroke({ "shift" }, "7") end)  -- &
+k:bind('shift', 's', function() hs.eventtap.keyStroke({ "shift" }, "8") end)  -- *
+k:bind('', 'o', function() hs.eventtap.keyStroke({ "shift" }, "9") end)       -- (
+k:bind('shift', 'o', function() hs.eventtap.keyStroke({ "shift" }, "0") end)  -- )
+
+k:bind('', 'm', function() hs.eventtap.keyStroke({}, "-") end)                -- -
+k:bind('', 'u', function() hs.eventtap.keyStroke({ "shift" }, "-") end)       -- _
+k:bind('', 'e', function() hs.eventtap.keyStroke({}, "=") end)                -- =
+k:bind('', 'p', function() hs.eventtap.keyStroke({ "shift" }, "=") end)       -- +
+k:bind('', 'b', function() hs.eventtap.keyStroke({}, "[") end)                -- [
+k:bind('shift', 'b', function() hs.eventtap.keyStroke({}, "]") end)           -- ]
+k:bind('', 'c', function() hs.eventtap.keyStroke({ "shift" }, "[") end)       -- {
+k:bind('shift', 'c', function() hs.eventtap.keyStroke({ "shift" }, "]") end)  -- }
+k:bind('', 'i', function() hs.eventtap.keyStroke({}, "\\") end)               -- \
+k:bind('shift', 'i', function() hs.eventtap.keyStroke({ "shift" }, "\\") end) -- |
+
+
+k:bind('', 'q', function() hs.eventtap.keyStroke({}, "`") end)               -- `
+k:bind('shift', 'q', function() hs.eventtap.keyStroke({ "shift" }, "`") end) -- ~

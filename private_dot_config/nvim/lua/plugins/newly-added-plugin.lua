@@ -54,4 +54,15 @@ return {
     "ThePrimeagen/harpoon",
     event = "VeryLazy",
   },
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "ecthelionvi/NeoComposer.nvim",
+    dependencies = { "kkharji/sqlite.lua" },
+    opts = {}
+  },
 }

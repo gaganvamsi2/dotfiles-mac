@@ -10,7 +10,6 @@ vim.cmd([[
   set formatoptions-=cro
   let g:ftplugin_sql_omni_key_right = '<C-N>'
 ]])
-
 local _border = "single"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
