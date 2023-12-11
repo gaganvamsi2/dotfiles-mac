@@ -17,6 +17,7 @@ return {
   },
   {
     "ray-x/go.nvim",
+    enabled = false,
     dependencies = { -- optional packages
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
@@ -42,6 +43,7 @@ return {
   },
   {
     "Exafunction/codeium.vim",
+    enabled = true,
     event = "BufEnter",
     config = function()
       -- Change '<C-g>' here to any keycode you like.
@@ -55,14 +57,15 @@ return {
     event = "VeryLazy",
   },
   {
-    'stevearc/oil.nvim',
-    opts = {},
+    "stevearc/oil.nvim",
+    opts = {
+      view_options = {
+        -- Show files and directories that start with "."
+        show_hidden = true,
+      },
+    },
+
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
-  },
-  {
-    "ecthelionvi/NeoComposer.nvim",
-    dependencies = { "kkharji/sqlite.lua" },
-    opts = {}
   },
 }

@@ -4,7 +4,6 @@ alias cp='cp -rv'   # Recursive and verbose `cp`
 alias mv='mv -v'    # Verbose `mv`
 alias mkdir='mkdir -vp'  # Recursive, verbose `mkdir`
 alias grep='rg'     # Use `ripgrep` instead of `grep`
-alias cat='bat'     # Use `bat` instead of `cat`
 
 # `exa` aliases for more informative and colored output
 alias la='exa --icons -a --group-directories-first'  # List all files and directories, including hidden ones

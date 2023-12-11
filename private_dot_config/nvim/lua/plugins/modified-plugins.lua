@@ -18,7 +18,7 @@ return {
         desc = "Explorer NeoTree (cwd)",
       },
       { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
-      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)",      remap = true },
+      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
     },
     deactivate = function()
       vim.cmd([[Neotree close]])
@@ -41,10 +41,10 @@ return {
       window = {
         mappings = {
           ["<space>"] = "none",
-          ['s'] = "none",
-          ['<c-s>'] = "open_vsplit",
-          ['f'] = "none",
-          ['<c-f>'] = "filter_on_submit",
+          ["s"] = "none",
+          ["<c-s>"] = "open_vsplit",
+          ["f"] = "none",
+          ["<c-f>"] = "filter_on_submit",
         },
       },
     },
@@ -77,25 +77,15 @@ return {
   -- },
   {
     "williamboman/mason.nvim",
-    opts = function(_, opts)
-      table.insert(opts.ensure_installed, "prettierd")
-    end,
-  },
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    enabled = false,
-    opts = function(_, opts)
-      if type(opts.sources) == "table" then
-        local nls = require("null-ls")
-        vim.list_extend(opts.sources, {
-          nls.builtins.formatting.prettierd,
-          nls.builtins.code_actions.gomodifytags,
-          nls.builtins.code_actions.impl,
-          nls.builtins.formatting.gofumpt,
-          nls.builtins.formatting.goimports_reviser,
-        })
-      end
-    end,
+    opts = {
+      ensure_installed = {
+        "gopls",
+        "prettierd",
+      },
+      ui = {
+        border = "rounded",
+      },
+    },
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -155,7 +145,7 @@ return {
         gopls = function(_, opts)
           -- workaround for gopls not supporting semanticTokensProvider
           -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
-          require("lazyvim.util").on_attach(function(client, _)
+          require("lazyvim.util").lsp.on_attach(function(client, _)
             if client.name == "gopls" then
               if not client.server_capabilities.semanticTokensProvider then
                 local semantic = client.config.capabilities.textDocument.semanticTokens
@@ -207,37 +197,33 @@ return {
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" }, { name = "nvim_lua" } }))
     end,
   },
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = function()
-      return {
-        sections = {
-          lualine_c = {
-            { require('NeoComposer.ui').status_recording },
-          },
-          lualine_y = {
-            {
-              function()
-                return vim.fn["codeium#GetStatusString"]()
-              end,
-            },
-            { "progress", separator = " ",                  padding = { left = 1, right = 0 } },
-            { "location", padding = { left = 0, right = 1 } },
-          },
-        },
-      }
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   opts = function()
+  --     return {
+  --       sections = {
+  --         lualine_y = {
+  --           {
+  --             function()
+  --               return vim.fn["codeium#GetStatusString"]()
+  --             end,
+  --           },
+  --           { "progress", separator = " ", padding = { left = 1, right = 0 } },
+  --           { "location", padding = { left = 0, right = 1 } },
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
   {
     "folke/noice.nvim",
-    opts =
-    {
+    opts = {
       -- routes = {
       --   {
       --     view = "split",
       --     filter = { event = "msg_show", min_width = 20 },
       --   },
       -- },
-    }
-  }
+    },
+  },
 }

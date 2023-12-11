@@ -4,14 +4,18 @@ local function get_text(start_row, start_col, end_row, end_col)
   return vim.api.nvim_buf_get_text(0, start_row, start_col, end_row, end_col, {})
 end
 
-local function get_lines(start_row, end_row) return vim.api.nvim_buf_get_lines(0, start_row, end_row, true) end
+local function get_lines(start_row, end_row)
+  return vim.api.nvim_buf_get_lines(0, start_row, end_row, true)
+end
 
-local function is_visual_mode() return vim.tbl_contains({ 'v', 'V', '\22' }, vim.fn.mode(1)) end
+local function is_visual_mode()
+  return vim.tbl_contains({ "v", "V", "\22" }, vim.fn.mode(1))
+end
 
 local function get_current_region()
   local from_expr, to_expr = "'[", "']"
   if is_visual_mode() then
-    from_expr, to_expr = '.', 'v'
+    from_expr, to_expr = ".", "v"
   end
 
   -- Add offset (*_pos[4]) to allow position go past end of line
@@ -30,12 +34,14 @@ end
 
 local function region_get_text(region, mode)
   local from, to = region.from, region.to
-  if mode == 'char' then
-    local to_col_offset = vim.o.selection == 'exclusive' and 1 or 0
+  if mode == "char" then
+    local to_col_offset = vim.o.selection == "exclusive" and 1 or 0
     return get_text(from.line - 1, from.col - 1, to.line - 1, to.col - to_col_offset)
   end
 
-  if mode == 'line' then return get_lines(from.line - 1, to.line) end
+  if mode == "line" then
+    return get_lines(from.line - 1, to.line)
+  end
 end
 
 TmuxPaneIdentifiers = {
@@ -53,15 +59,15 @@ TmuxPaneIdentifiers = {
   ["{up-of}                The pane above the active pane"] = "{up-of}",
   ["{down-of}              The pane below the active pane"] = "{down-of}",
   ["{left-of}              The pane to the left of the active pane"] = "{left-of}",
-  ["{right-of}             The pane to the right of the active pane"] = "{right-of}"
+  ["{right-of}             The pane to the right of the active pane"] = "{right-of}",
 }
 
 function M.addVimUserCommand()
-  vim.api.nvim_create_user_command('SendToTmuxPane', function(opts)
-    local mode = 'line'
+  vim.api.nvim_create_user_command("SendToTmuxPane", function(opts)
+    local mode = "line"
     local region = {}
-    vim.print(opts)
-    local default = opts.args == 'default'
+    -- vim.print(opts)
+    local default = opts.args == "default"
     if not is_visual_mode() then
       local currentLine = vim.api.nvim_win_get_cursor(0)[1]
       region = { from = { line = currentLine, col = 1 }, to = { line = currentLine, col = 1 } }
@@ -70,11 +76,11 @@ function M.addVimUserCommand()
     end
     -- local register = vim.fn.getreg('m')
     local listOfLines = region_get_text(region, mode)
-    local text = table.concat(listOfLines, '\n')
-    text = text:gsub(';', '\\;'):gsub("'", "'\\''")
+    local text = table.concat(listOfLines, "\n")
+    text = text:gsub("'", "'\\''")
     local keyset = {}
     local n = 0
-    local selectedTmuxPaneId = '{down-of}'
+    local selectedTmuxPaneId = "{down-of}"
     for k, _ in pairs(TmuxPaneIdentifiers) do
       n = n + 1
       keyset[n] = k
@@ -82,13 +88,12 @@ function M.addVimUserCommand()
     if default then
       sendOsCommand(selectedTmuxPaneId, text)
     else
-      vim.ui.select(keyset, { prompt = 'Select tmux pane: ' },
-        function(selected)
-          selectedTmuxPaneId = TmuxPaneIdentifiers[selected]
-          sendOsCommand(selectedTmuxPaneId, text)
-        end)
+      vim.ui.select(keyset, { prompt = "Select tmux pane: " }, function(selected)
+        selectedTmuxPaneId = TmuxPaneIdentifiers[selected]
+        sendOsCommand(selectedTmuxPaneId, text)
+      end)
     end
-  end, { nargs = '*' })
+  end, { nargs = "*" })
 end
 
 function sendOsCommand(selectedTmuxPaneId, text)
