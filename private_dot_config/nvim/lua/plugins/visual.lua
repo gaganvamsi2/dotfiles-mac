@@ -1,6 +1,6 @@
 return {
   {
-    "glepnir/dashboard-nvim",
+    "nvimdev/dashboard-nvim",
     event = "VimEnter",
     opts = function()
       local logo = [[
@@ -29,7 +29,7 @@ return {
           { action = "Telescope find_files",              desc = " Find file",       icon = " ", key = "f" },
           { action = "Telescope oldfiles",                desc = " Recent files",    icon = " ", key = "r" },
           { action = "Telescope live_grep",               desc = " Find text",       icon = " ", key = "g" },
-          { action = "e ~/.local/share/chezmoi/Readme.md",                        desc = " Config",          icon = " ", key = "c" },
+          { action = "e ~/.local/share/chezmoi/Readme.md",desc = " Config",          icon = " ", key = "c" },
           { action = 'lua require("persistence").load()', desc = " Restore Session", icon = " ", key = "s" },
           { action = "LazyExtras",                        desc = " Lazy Extras",     icon = " ", key = "e" },
           { action = "Lazy",                              desc = " Lazy",            icon = "󰒲 ", key = "l" },
@@ -59,6 +59,14 @@ return {
       end
 
       return opts
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    optional = true,
+    event = "VeryLazy",
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, 2, require("lazyvim.util").lualine.cmp_source("codeium"))
     end,
   },
 }

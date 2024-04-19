@@ -41,6 +41,12 @@ nnoremap <leader>w :wall<CR>
 
 " paste without affecting clipboard
 vnoremap p "_dP
+nnoremap ,ca :let @a=@*
+nnoremap ,cs :let @s=@*
+nnoremap ,cd :let @d=@*
+nnoremap ,cf :let @f=@*
+
+
 " vnoremap P "_P
 " 
 

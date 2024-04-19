@@ -42,30 +42,12 @@ return {
     end,
   },
   {
-    "Exafunction/codeium.vim",
-    enabled = true,
-    event = "BufEnter",
-    config = function()
-      -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set("i", "<Right>", function()
-        return vim.fn["codeium#Accept"]()
-      end, { expr = true })
-    end,
-  },
-  {
-    "ThePrimeagen/harpoon",
-    event = "VeryLazy",
-  },
-  {
     "stevearc/oil.nvim",
     opts = {
       view_options = {
-        -- Show files and directories that start with "."
         show_hidden = true,
       },
     },
-
-    -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
 }

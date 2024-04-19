@@ -62,6 +62,12 @@ TmuxPaneIdentifiers = {
   ["{right-of}             The pane to the right of the active pane"] = "{right-of}",
 }
 
+function SendOsCommand(selectedTmuxPaneId, text)
+  local cmd = string.format([[! tmux send-keys -t %s '%s' Enter]], selectedTmuxPaneId, text)
+  local parsedCmd = vim.api.nvim_parse_cmd(cmd, {})
+  vim.api.nvim_cmd(parsedCmd, {})
+end
+
 function M.addVimUserCommand()
   vim.api.nvim_create_user_command("SendToTmuxPane", function(opts)
     local mode = "line"
@@ -86,20 +92,21 @@ function M.addVimUserCommand()
       keyset[n] = k
     end
     if default then
-      sendOsCommand(selectedTmuxPaneId, text)
+      SendOsCommand(selectedTmuxPaneId, text)
     else
       vim.ui.select(keyset, { prompt = "Select tmux pane: " }, function(selected)
         selectedTmuxPaneId = TmuxPaneIdentifiers[selected]
-        sendOsCommand(selectedTmuxPaneId, text)
+        SendOsCommand(selectedTmuxPaneId, text)
       end)
     end
   end, { nargs = "*" })
-end
-
-function sendOsCommand(selectedTmuxPaneId, text)
-  local cmd = string.format([[! tmux send-keys -t %s '%s' Enter]], selectedTmuxPaneId, text)
-  local parsedCmd = vim.api.nvim_parse_cmd(cmd, {})
-  vim.api.nvim_cmd(parsedCmd, {})
+  -- Add neovim user command 'CodeiumDisable' and 'CodeiumEnable' to disabel or enable codeium on the fly
+  vim.api.nvim_create_user_command("CodeiumDisable", function()
+    vim.g.codeium_enabled = false
+  end, {})
+  vim.api.nvim_create_user_command("CodeiumEnable", function()
+    vim.g.codeium_enabled = true
+  end, {})
 end
 
 -- Export the module

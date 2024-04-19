@@ -81,9 +81,6 @@ map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
 map("n", "gb", "<C-o>", { desc = "go back" })
 map("n", "gp", "<C-i>", { desc = "go forward" })
 
--- source current file
-map("n", "gp", "<C-i>", { desc = "go forward" })
-
 map({ "n", "v" }, "<leader>S", "<Cmd>source % | ls<CR>", { desc = "source current file" })
 
 --custom command
