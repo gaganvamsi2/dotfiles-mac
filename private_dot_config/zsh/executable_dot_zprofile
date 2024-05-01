@@ -81,3 +81,5 @@ export PATH=$PATH:"$HOME/.cargo/bin"
 export PATH=$PATH:"/Applications/IntelliJ IDEA.app/Contents/MacOS"
 export PATH=$PATH:$GOBIN
 export PATH=$PATH:/Users/azhahes/Workspace/tools/apache-maven-3.9.2/bin
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
