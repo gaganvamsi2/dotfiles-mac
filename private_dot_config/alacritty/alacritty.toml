@@ -1,12 +1,26 @@
 [font]
 size = 14.0
 
+
+[font.normal]
+ family = "JetBrainsMono Nerd Font"
+
 [window]
-decorations = "full"
-opacity = 0.9
+decorations = "Buttonless"
+opacity = 0.8
+blur = true
 option_as_alt = "Both"
-startup_mode = "SimpleFullscreen"
+# startup_mode = "SimpleFullscreen"
 
 [window.padding]
-x = 2
-y = 2
+x = 10
+y = 10
+
+
+[window.position]
+x = 30
+y = 30
+
+[window.dimensions]
+columns = 230
+lines = 59

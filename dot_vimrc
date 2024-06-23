@@ -61,5 +61,4 @@ if has('ide')
 else
   " some mappings for Vim/Neovim
   " -- delete single character without copying into register
-  nnoremap x _x
 endif

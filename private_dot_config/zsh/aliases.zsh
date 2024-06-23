@@ -6,12 +6,12 @@ alias mkdir='mkdir -vp'  # Recursive, verbose `mkdir`
 alias grep='rg'     # Use `ripgrep` instead of `grep`
 
 # `exa` aliases for more informative and colored output
-alias la='exa --icons -a --group-directories-first'  # List all files and directories, including hidden ones
-alias ll='exa --icons -lah --group-directories-first'  # List in long format with permissions and human-readable sizes
-alias ls='exa --icons --group-directories-first'  # List files and directories
+alias la='eza --icons -a --group-directories-first -s modified'  # List all files and directories, including hidden ones
+alias ll='eza --icons -lah --group-directories-first -s modified'  # List in long format with permissions and human-readable sizes
+alias ls='eza --icons --group-directories-first -s modified'  # List files and directories
 
 # `exa` alias for displaying directory trees
-alias tree='exa --icons --tree'
+alias tree='eza --icons --tree'
 
 # Misc aliases
 alias updates='checkupdates; paru -Qum'  # Check system and AUR updates
@@ -24,18 +24,15 @@ alias lf=lfcd
 alias iopacity="~/.config/alacritty/change-opacity.sh +"
 alias dopacity="~/.config/alacritty/change-opacity.sh -"
 
-# `exa` aliases for more informative and colored output
-alias la='exa --icons -a --group-directories-first'  # List all files and directories, including hidden ones
-alias ll='exa --icons -lah --group-directories-first'  # List in long format with permissions and human-readable sizes
-alias ls='exa --icons --group-directories-first'  # List files and directories
-
-alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
 alias cm=chezmoi
 
 alias pstree="pstree -g 2"
-alias vpn="~/connect-vpn.sh"
 
 #git
 alias gst="git status"
 alias gco="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+alias ssh-vm='sshpass -p "g<KIWa56G^Lq" ssh azsubra@phoenix327666.appsdev.fusionappsdphx1.oraclevcn.com -t "cd /scratch/azhahes/authz; bash"'
+alias kc=kubectl
+alias cp-path='pwd | clipcopy'

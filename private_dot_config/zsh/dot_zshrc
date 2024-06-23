@@ -1,8 +1,19 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 #!/usr/bin/env zsh
 #
-if [ -z "$TMUX" ] && [ ${UID} != 0 ]
-then
-    tmux new-session -A -s main
+
+if [ -z "$TMUX" ] && [ "$UID" != 0 ] && [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]; then
+    if tmux has-session -t main 2>/dev/null; then
+        tmux attach-session -t main
+    else
+        tmux new-session -s main
+    fi
 fi
 
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
@@ -15,7 +26,6 @@ plugins=(vi-mode zsh-autosuggestions zsh-syntax-highlighting fzf zsh-interactive
 source "$ZSH/oh-my-zsh.sh"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/options.zsh"
 source "$ZDOTDIR/functions.zsh"
@@ -25,8 +35,12 @@ eval "$(zoxide init zsh)"
 # # Refrence:
 # # https://gitlab.com/fazzi/dotfiles.git
 
-echo "loaded"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
+export GOPRIVATE=orahub.oci.oraclecorp.com
+
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

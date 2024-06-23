@@ -127,9 +127,9 @@ nnoremap ,t :action ActivateRunToolWindow<CR>
 nnoremap ,u :action Rerun<CR>
 nnoremap ,b :action ToggleLineBreakpoint<CR>
 nnoremap ,n :action ActivateDebugToolWindow<CR>
-nnoremap ,sv :action StepOver<cr>
+nnoremap ,so :action StepOver<cr>
 nnoremap ,si :action StepInto<cr>e
-nnoremap ,so :action StepOut<cr>
+nnoremap ,sx :action StepOut<cr>
 nnoremap ,sr :action Resume<cr>
 map ,se :action QuickEvaluateExpression<cr>
 map ,st :action EvaluateExpression<cr>

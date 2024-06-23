@@ -4,6 +4,10 @@ cheet() {
   curl cht.sh/$1 | bat
 }
 
+cp-vm() {
+  scp -rp $1 azsubra@phoenix327666.appsdev.fusionappsdphx1.oraclevcn.com:$2
+}
+
 obsidian-cleanup() {
  fd -e txt . '/Users/azhahes/Library/Mobile Documents/iCloud~md~obsidian/Documents/knowledge-vault' -x sh -c 'mv "$0" "${0%.md.txt}.md"' {}
 }
