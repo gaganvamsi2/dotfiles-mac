@@ -5,7 +5,7 @@ end
 
 local appsInOrder = { "arc", "alacritty", "goland", "obsidian", "zoom.us" }
 
-function addSpace()
+function AddSpace()
 	local screenUUID = hs.screen.mainScreen():getUUID()
 	local currntSpaces = hs.spaces.allSpaces()[screenUUID]
 	for i = #currntSpaces + 1, 2, 1 do
@@ -19,4 +19,4 @@ function addSpace()
 	end
 end
 
-hs.hotkey.bind({ "cmd", "crtl", "alt", "shift" }, "z", addSpace)
+hs.hotkey.bind({ "cmd", "ctrl", "alt", "shift" }, "z", AddSpace)
