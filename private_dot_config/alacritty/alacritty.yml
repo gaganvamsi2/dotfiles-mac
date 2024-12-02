@@ -10,3 +10,5 @@ font:
   normal:
     family: JetBrainsMono Nerd Font
   size: 14.0
+key_bindings:
+  - { key : N, mods : Command, action : CreateNewWindow }

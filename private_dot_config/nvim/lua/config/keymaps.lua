@@ -81,9 +81,9 @@ map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
 map("n", "gb", "<C-o>", { desc = "go back" })
 map("n", "gp", "<C-i>", { desc = "go forward" })
 
-map({ "n", "v" }, "<leader>S", "<Cmd>source % | ls<CR>", { desc = "source current file" })
+-- map({ "n", "v" }, "<leader>S", "<Cmd>source % | ls<CR>", { desc = "source current file" })
 
 --custom command
 require("config.custom-commands").addVimUserCommand()
-map({ 'n', 'v' }, '<leader>a', "<Cmd>SendToTmuxPane default<CR>", { desc = "send to bottom tmux pane" })
-map({ 'n', 'v' }, '<leader>A', "<Cmd>SendToTmuxPane<CR>", { desc = "send to selected tmux pane" })
+map({ "n", "v" }, "<leader>a", "<Cmd>SendToTmuxPane default<CR>", { desc = "send to bottom tmux pane" })
+map({ "n", "v" }, "<leader>A", "<Cmd>SendToTmuxPane<CR>", { desc = "send to selected tmux pane" })

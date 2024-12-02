@@ -36,3 +36,5 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias ssh-vm='sshpass -p "g<KIWa56G^Lq" ssh azsubra@phoenix327666.appsdev.fusionappsdphx1.oraclevcn.com -t "cd /scratch/azhahes/authz; bash"'
 alias kc=kubectl
 alias cp-path='pwd | clipcopy'
+
+alias -g W='| nvim -c "setlocal buftype=nofile bufhidden=wipe" -c "nnoremap <buffer> q :q!<CR>" -'

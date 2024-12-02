@@ -19,4 +19,4 @@ function AddSpace()
 	end
 end
 
-hs.hotkey.bind({ "cmd", "ctrl", "alt", "shift" }, "z", AddSpace)
+hs.hotkey.bind({ "cmd", "alt" }, "z", AddSpace)

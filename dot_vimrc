@@ -33,16 +33,10 @@ noremap <leader>yy "*yy
 noremap <leader>p "*p
 
 
-" -- window management
-nnoremap <leader>sv <C-w>v
-nnoremap <leader>sh <C-w>s
-nnoremap <leader>se <C-w>=
-nnoremap <leader>sx :close<CR>
-
 nnoremap <leader>to :tabnew<CR>
 nnoremap <leader>tx :tabclose<CR>
-nnoremap <leader>tn :tabn<CR>
-nnoremap <leader>tp :tabp<CR>
+nnoremap L :tabn<CR>
+nnoremap H :tabp<CR>
 
 vnoremap K :move '<-2<CR>gv=gv"
 vnoremap J :move '>+1<CR>gv=gv"

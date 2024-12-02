@@ -3,4 +3,4 @@ spoon.ReloadConfiguration:start()
 
 require("toggle-mute")
 require("hide-zoom-control")
-require("app-switcher")
+require("open-app")

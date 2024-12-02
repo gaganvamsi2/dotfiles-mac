@@ -21,16 +21,20 @@
             "description": "Remap hyper key combinations for symbols",
             "manipulators": [
               {
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "p"
                 },
                 "to": [
                   {
@@ -43,16 +47,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "b",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "b"
                 },
                 "to": [
                   {
@@ -65,16 +73,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "c"
                 },
                 "to": [
                   {
@@ -87,16 +99,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "w",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "w"
                 },
                 "to": [
                   {
@@ -109,16 +125,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "e",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "e"
                 },
                 "to": [
                   {
@@ -128,16 +148,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "n"
                 },
                 "to": [
                   {
@@ -147,16 +171,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "s"
                 },
                 "to": [
                   {
@@ -169,16 +197,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "a"
                 },
                 "to": [
                   {
@@ -191,16 +223,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "x",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "x"
                 },
                 "to": [
                   {
@@ -213,16 +249,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "h"
                 },
                 "to": [
                   {
@@ -235,16 +275,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "d"
                 },
                 "to": [
                   {
@@ -257,16 +301,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "g",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "g"
                 },
                 "to": [
                   {
@@ -279,16 +327,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "v",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "v"
                 },
                 "to": [
                   {
@@ -301,16 +353,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "f"
                 },
                 "to": [
                   {
@@ -323,16 +379,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "t"
                 },
                 "to": [
                   {
@@ -345,16 +405,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "q",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "q"
                 },
                 "to": [
                   {
@@ -364,16 +428,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "u",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "u"
                 },
                 "to": [
                   {
@@ -383,16 +451,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "i",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "i"
                 },
                 "to": [
                   {
@@ -402,16 +474,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "o"
                 },
                 "to": [
                   {
@@ -421,16 +497,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "j"
                 },
                 "to": [
                   {
@@ -440,16 +520,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "k",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "k"
                 },
                 "to": [
                   {
@@ -459,16 +543,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "l"
                 },
                 "to": [
                   {
@@ -478,16 +566,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "m",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "m"
                 },
                 "to": [
                   {
@@ -497,16 +589,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "comma",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "comma"
                 },
                 "to": [
                   {
@@ -516,16 +612,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "period",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "period"
                 },
                 "to": [
                   {
@@ -535,16 +635,20 @@
                 "type": "basic"
               },
               {
-                "from": {
-                  "key_code": "y",
-                  "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control",
-                      "shift",
-                      "option"
-                    ]
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  },
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 0
                   }
+                ],
+                "from": {
+                  "key_code": "y"
                 },
                 "to": [
                   {
@@ -556,7 +660,175 @@
             ]
           },
           {
-            "description": "ctrl -> hyper (i.e. command+control+option+shift)",
+            "description": "Ctrl + Tab key activates custom mode",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "name": "hyper1",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "tab",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 100
+                },
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper2",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "set_variable": {
+                      "name": "hyper2",
+                      "value": 1
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "b"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Arc.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "m"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Obsidian.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "i"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'GoLand.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "p"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Postman.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "k"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Alacritty.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "h"
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'zoom.us.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper2",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "j"
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/the-browser-company/arc/search'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "ctrl -> hyper and right_option -> hyper",
             "manipulators": [
               {
                 "from": {
@@ -567,14 +839,23 @@
                     ]
                   }
                 },
-                "to": [
+                "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 10
+                },
+                "to_after_key_up": [
                   {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_control",
-                      "right_option",
-                      "right_command"
-                    ]
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 1
+                    }
                   }
                 ],
                 "type": "basic"
@@ -588,14 +869,53 @@
                     ]
                   }
                 },
-                "to": [
+                "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 10
+                },
+                "to_after_key_up": [
                   {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_control",
-                      "right_option",
-                      "right_command"
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 1
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "right_option",
+                  "modifiers": {
+                    "optional": [
+                      "any"
                     ]
+                  }
+                },
+                "parameters": {
+                  "basic.to_if_held_down_threshold_milliseconds": 10
+                },
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "set_variable": {
+                      "name": "hyper1",
+                      "value": 1
+                    }
                   }
                 ],
                 "type": "basic"
@@ -846,7 +1166,18 @@
         },
         {
           "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f7"
+              },
+              "to": [
+                {
+                  "key_code": "f7"
+                }
+              ]
+            }
+          ],
           "game_pad_swap_sticks": false,
           "identifiers": {
             "is_game_pad": false,

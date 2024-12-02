@@ -16,10 +16,33 @@ copy-tmux-window-address() {
   tmux display-message -p '#{session_name}:#{window_index}.#{pane_index}' | awk '{print $1}' | clipcopy
 }
 
-aws-sso-login(){
-  aws sso login --profile $1
-  eval $(aws configure export-credentials --profile $1 --format env)
+select-kube-config() {
+  oci ce cluster create-kubeconfig --cluster-id $(
+    oci ce cluster list --compartment-id $(
+      oci iam compartment list --compartment-id ocid1.compartment.oc1..aaaaaaaayrghte3g2iiualdgaqqikwumcweskuengqgty65yiwnf6mndvcha |
+      jq -r '.data[] | [.name, .id] | @tsv' |
+      fzf |
+      awk '{print $2}'
+    ) |
+    jq -r '.data[0].id'
+  ) --file $HOME/.kube/config --region us-phoenix-1 --token-version 2.0.0
 }
+
+# Usage
+# get_secret_value "<your_secret_ocid>"
+get_secret_value() {
+    local secret_id=$1
+
+    if [[ -z "$secret_id" ]]; then
+        echo "Secret ID is required."
+        return 1
+    fi
+
+    # Retrieve, decode, display, and copy the secret value
+    oci secrets secret-bundle get --secret-id "$secret_id" \
+        --query 'data."secret-bundle-content".content' --raw-output | base64 --decode | tee >(pbcopy)
+}
+
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.

@@ -85,3 +85,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Oracle specific
 export OCI_CLI_AUTH=security_token
+
+export PATH=$PATH:/opt/oracle/instantclient_23_3/

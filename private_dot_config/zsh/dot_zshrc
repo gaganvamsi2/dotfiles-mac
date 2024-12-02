@@ -29,10 +29,11 @@ source "$ZSH/oh-my-zsh.sh"
 source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/options.zsh"
 source "$ZDOTDIR/functions.zsh"
+source <(kubectl completion zsh)
+source <(fx --comp zsh)
 
 eval "$(zoxide init zsh)"
-
-# # Refrence:
+ # Refrence:
 # # https://gitlab.com/fazzi/dotfiles.git
 
 

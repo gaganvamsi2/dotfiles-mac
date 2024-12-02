@@ -1,6 +1,6 @@
 local originalFrame = nil
 
-hs.hotkey.bind({ "cmd", "ctrl", "alt" }, "H", function()
+hs.hotkey.bind({ "shift", "alt" }, "h", function()
 	local zoomWindow = hs.window.find("zoom share statusbar window")
 	if zoomWindow then
 		if originalFrame then

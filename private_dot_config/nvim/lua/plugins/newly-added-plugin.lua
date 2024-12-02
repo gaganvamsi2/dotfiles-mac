@@ -61,4 +61,8 @@ return {
       })
     end,
   },
+  -- packer example:
+  {
+    "LunarVim/bigfile.nvim",
+  },
 }
