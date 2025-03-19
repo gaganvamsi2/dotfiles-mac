@@ -7,6 +7,7 @@ These are my personal dotfiles for customizing and setting up my development env
 Before proceeding, make sure you have the following installed on your system:
 
 - [chezmoi](https://github.com/twpayne/chezmoi) - A tool to manage your dotfiles.
+
 ## Installation/Initialization
 
 1. Install `chezmoi`:
@@ -33,7 +34,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at azhahes96@gmail.com.
+If you have any questions or suggestions, feel free to contact me at <azhahes96@gmail.com>.
 
 ## Acknowledgments
 

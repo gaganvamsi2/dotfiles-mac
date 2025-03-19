@@ -71,7 +71,7 @@ map("n", "<leader>w-", "<Nop>", { desc = "Split window below", remap = true })
 map("n", "<leader>w|", "<Nop>", { desc = "Split window right", remap = true })
 
 -- save file
-map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Save file" })
+map("n", "<leader>w", "<cmd>wall<cr><esc>", { desc = "Save file" })
 
 --center after scroll
 map("n", "<C-d>", "<C-d>zz", { desc = "Scroll down" })
@@ -87,3 +87,4 @@ map("n", "gp", "<C-i>", { desc = "go forward" })
 require("config.custom-commands").addVimUserCommand()
 map({ "n", "v" }, "<leader>a", "<Cmd>SendToTmuxPane default<CR>", { desc = "send to bottom tmux pane" })
 map({ "n", "v" }, "<leader>A", "<Cmd>SendToTmuxPane<CR>", { desc = "send to selected tmux pane" })
+map({ "n", "v", "i" }, "<C-tab>", "<C-^>", { desc = "switch alternate file" })

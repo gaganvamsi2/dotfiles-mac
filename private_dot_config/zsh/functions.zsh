@@ -71,3 +71,25 @@ _fzf_comprun() {
     *)            fzf --preview 'bat -n --color=always {}' "$@" ;;
   esac
 }
+
+r_authz_service () {
+	local go_file=$1 
+	if [[ -z "$go_file" ]]
+	then
+		echo "Usage: process_logs <go_file>"
+		return 1
+	fi
+	go run "$go_file" 2>&1 | while IFS= read -r line
+	do
+		level=$(printf '%s' $line | jq -R 'fromjson? | .level' 2>/dev/null) 
+		level="${level//\"/}" 
+		case "$level" in
+			(error) printf '%s' $line | jq -R 'fromjson?' -c -C | awk '{print " \033[31mError\033[0m |", $0 }' ;;
+			(warning) printf '%s' $line | jq -R 'fromjson?' -c -C | awk '{print "⚠ \033[33mWarn\033[0m  |", $0 }' ;;
+			(info) printf '%s' $line | jq -R 'fromjson?' -c -C | awk '{print "󰋼 \033[32mInfo\033[0m  |", $0 }' ;;
+			(debug) printf '%s' $line | jq -R 'fromjson?' -c -C | awk '{print " \033[34mDebug\033[0m |", $0 }' ;;
+			(*) echo $line | awk '{print "󰍩  \033[35mOther\033[0m |", $0 }' ;;
+		esac
+	done
+}
+

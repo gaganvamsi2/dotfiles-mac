@@ -10,24 +10,6 @@ return {
     },
   },
   {
-    "hrsh7th/nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji", "hrsh7th/cmp-nvim-lua" },
-    opts = function(_, opts)
-      local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" }, { name = "nvim_lua" } }))
-    end,
-  },
-  {
-    "Exafunction/codeium.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
-    config = function()
-      require("codeium").setup({})
-    end,
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
@@ -75,11 +57,102 @@ return {
               search_dir = node.id
             end
 
-            local cmd = string.format([[Telescope live_grep search_dirs=%s]], search_dir)
+            local cmd = string.format([[FzfLua live_grep cwd=%s]], search_dir)
             local parsedCmd = vim.api.nvim_parse_cmd(cmd, {})
             vim.api.nvim_cmd(parsedCmd, {})
           end,
         },
+      },
+    },
+  },
+  {
+    "nvim-neotest/neotest",
+    opts = {
+      adapters = {
+        ["neotest-golang"] = {
+          runner = "gotestsum",
+          -- Here we can set options for neotest-golang, e.g.
+          -- go_test_args = { "-v", "-race", "-count=1", "-timeout=60s" },
+          dap_go_enabled = true, -- requires leoluz/nvim-dap-go
+          testify_enabled = true,
+        },
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        go = function(bufnr)
+          local filepath = vim.api.nvim_buf_get_name(bufnr) -- Get the full file path for the buffer
+          if
+            string.match(filepath, "oracle/workspace/authz/")
+            or string.match(filepath, "oracle/workspace/authz%-trunk/")
+          then
+            return { "goimports", "gofmt" }
+          else
+            return { "goimports", "gofumpt" }
+          end
+        end,
+      },
+    },
+  },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    opts = {
+      menu = {
+        width = vim.api.nvim_win_get_width(0) - 4,
+      },
+      settings = {
+        save_on_toggle = true,
+      },
+    },
+    keys = function()
+      local keys = {
+        {
+          "<leader>J",
+          function()
+            require("harpoon"):list():add()
+          end,
+          desc = "Harpoon File",
+        },
+        {
+          "<leader>j",
+          function()
+            local harpoon = require("harpoon")
+            harpoon.ui:toggle_quick_menu(harpoon:list())
+          end,
+          desc = "Harpoon Quick Menu",
+        },
+        {
+          "<leader>K",
+          function()
+            local harpoon = require("harpoon")
+            harpoon:list():clear()
+          end,
+          desc = "Harpoon clear files",
+        },
+      }
+
+      for i = 1, 5 do
+        table.insert(keys, {
+          "<leader>" .. i,
+          function()
+            require("harpoon"):list():select(i)
+          end,
+          desc = "Harpoon to File " .. i,
+        })
+      end
+      return keys
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        layout_strategy = "flex",
       },
     },
   },

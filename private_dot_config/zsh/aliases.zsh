@@ -38,3 +38,7 @@ alias kc=kubectl
 alias cp-path='pwd | clipcopy'
 
 alias -g W='| nvim -c "setlocal buftype=nofile bufhidden=wipe" -c "nnoremap <buffer> q :q!<CR>" -'
+
+alias lg=lazygit
+
+alias ossp=ossp-cli

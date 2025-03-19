@@ -3,7 +3,26 @@ return {
     "norcalli/nvim-colorizer.lua",
   },
   {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+      "TmuxNavigatorProcessList",
+    },
+    keys = {
+      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
+  },
+  {
     "alexghergh/nvim-tmux-navigation",
+    enabled = false,
     opts = {
       disable_when_zoomed = true, -- defaults to false
       keybindings = {
@@ -61,8 +80,13 @@ return {
       })
     end,
   },
-  -- packer example:
   {
-    "LunarVim/bigfile.nvim",
+    "ellisonleao/dotenv.nvim",
+    config = function()
+      require("dotenv").setup({
+        enable_on_load = true, -- will load your .env file upon loading a buffer
+        verbose = false, -- show error notification if .env file is not found and if .env is loaded
+      })
+    end,
   },
 }
