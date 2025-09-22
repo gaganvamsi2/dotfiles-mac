@@ -17,7 +17,7 @@ Before proceeding, make sure you have the following installed on your system:
 2. Initialize dotfiles using `chezmoi`:
 
    ```bash
-   chezmoi init --apply https://github.com/azhahes/dotfiles-mac.git
+   chezmoi init --apply https://github.com/gaganvamsi2/dotfiles-mac.git
    ```
 
 ## Troubleshooting
