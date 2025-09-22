@@ -42,3 +42,19 @@ alias -g W='| nvim -c "setlocal buftype=nofile bufhidden=wipe" -c "nnoremap <buf
 alias lg=lazygit
 
 alias ossp=ossp-cli
+alias sshlocal=~/spectra/devops/sshconnect.sh
+alias k=kubectl
+alias kns=kubens
+alias v=nvim
+
+
+export PATH=$PATH:/Users/gaganvamsireddy/Downloads/instantclient_23_3
+export PATH=/Users/gaganvamsireddy/Downloads/oracle.boss.tools-2307.0.510/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH=$(go env GOPATH)/bin:$PATH
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
+export OCI_CLI_AUTH=security_token
